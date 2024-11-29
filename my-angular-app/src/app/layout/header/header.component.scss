@@ -1,6 +1,29 @@
-$icon-bg-color: #E8F1F8;;
-// @import 'src/styles/variables';
-.icon-bg {
-  background-color: $icon-bg-color !important;
+@import  './variables';
+@import './mixins';
 
+.header{
+  .header-left{
+    .icon-bg {
+      background-color: $icon-bg-color !important;
+    }
+  }
+  .header-right{
+    @include padding(0.75rem,2rem,0.75rem,0.75rem);
+    .icon-bg {
+      background-color: $icon-bg-color !important;
+    }
+    .p-inputtext{
+      @include padding(0.5rem, 2rem, 0.5rem, 2rem);
+      background-color: $p-inputtextbg;
+      
+    } ::placeholder {
+      color: $placeholdertext; 
+    }
+    .p-badge{
+@include height-width-minwi-fs-lh(1rem,1rem,1rem,0.75rem,1rem);
+    }
+     p{
+      color: $placeholdertext; 
+    }
+  }
 }

@@ -1,0 +1,26 @@
+@import './variables';
+@import './mixins';
+
+.sidebar {
+    background-color: $sidebar-bg;
+
+    span {
+        color: $menuheader-item-color;
+    }
+
+    li,
+    .pi {
+        color: $menu-item-color;
+        font-size: 0.8rem;
+
+        a {
+            @include padding(0.5rem, 1rem, 0.5rem, 1rem);
+        }
+        :hover {
+            background-color: $menu-item-hover-bg;
+        }
+        .apps {
+            background-color: none;
+        }
+    }
+}

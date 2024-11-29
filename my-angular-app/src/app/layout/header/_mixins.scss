@@ -1,0 +1,16 @@
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+  @mixin font-size($font-s){
+    font-size: 1rem;
+  }
+  @mixin height-width-minwi-fs-lh($h,$w,$mw,$fs,$lh){
+    height: $h;
+    width: $w;
+    min-width: $mw;
+    font-size: $fs;
+    line-height: $lh;
+  }
