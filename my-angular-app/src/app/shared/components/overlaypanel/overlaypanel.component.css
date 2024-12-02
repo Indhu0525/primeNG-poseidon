@@ -1,0 +1,27 @@
+.p-button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 0.625rem;
+  outline: none;
+}
+
+.p-ripple {
+  overflow: visible;
+}
+
+.p-overlaypanel, .p-overlaypanel-content {
+  padding: 0;
+}
+
+.overlay-card {
+  background-color: rgba(232, 241, 248, 0.7019607843);
+}
+
+.p-badge {
+  border-radius: 12px;
+}
+
+.notifications ul li :hover {
+  background-color: #e8f1f8;
+}/*# sourceMappingURL=overlaypanel.component.css.map */

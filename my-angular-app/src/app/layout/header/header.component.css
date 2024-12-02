@@ -1,0 +1,35 @@
+.header .header-left .icon-bg {
+  background-color: #E8F1F8 !important;
+}
+.header .header-right {
+  padding-top: 0.75rem;
+  padding-right: 2rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+}
+.header .header-right .icon-bg {
+  background-color: #E8F1F8 !important;
+}
+.header .header-right .p-inputtext {
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  background-color: #E8F1F8;
+}
+.header .header-right ::-moz-placeholder {
+  color: #9ba1a7;
+}
+.header .header-right ::placeholder {
+  color: #9ba1a7;
+}
+.header .header-right .p-badge {
+  height: 1rem;
+  width: 1rem;
+  min-width: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.header .header-right p {
+  color: #9ba1a7;
+}/*# sourceMappingURL=header.component.css.map */

@@ -1,4 +1,4 @@
-<div class="header flex flex-column lg:flex-row align-items-center bg-white shadow-1 w-full">
+<div class="header flex flex-column lg:flex-row align-items-center bg-white shadow-1 w-full h-4rem">
 
     <div class="header-left p-3 lg:px-3 lg:w-18rem w-full flex-shrink-0 flex align-items-center justify-content-between">
         <button class="icon-bg w-2rem h-2rem block lg:hidden border-circle flex justify-content-center align-items-center">
@@ -27,15 +27,13 @@
                 </p-inputIcon>
                 <input type="text" pInputText placeholder="Search.." class="hidden lg:block border-none border-round-3xl text-sm" />
             </p-iconField>
-            <div>
-                <i class="pi pi-bell text-md" pBadge value="2"></i>
-            </div>
-            <div>
-                <i class="pi pi-comments text-md" pBadge value="6"></i>
-            </div>
+            <app-overlaypanel></app-overlaypanel>
+            <app-overlaypanelmessages></app-overlaypanelmessages>
+            <app-settings></app-settings>
             <div>
                 <i class="pi pi-cog text-md"></i>
             </div>
+          
             <div class="lg:flex gap-2 align-items-center hidden ">
                 <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
                 <div class="flex flex-column">
@@ -47,5 +45,6 @@
                 <i class="pi pi-arrow-left text-lg"></i>
             </div>
         </div>
+      
     </div>
 </div>

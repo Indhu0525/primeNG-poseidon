@@ -23,6 +23,13 @@ export class SidebarComponent {
   isFavoritesVisible = false;
   isReportsVisible = false;
   isBlogsVisible = false;
+  isAuthVisible = false;
+  isSubmenu1Visible = false;
+  isSubmenu11Visible = false;
+  isSubmenu12Visible = false;
+  isSubmenu2Visible = false;
+  isSubmenu21Visible = false;
+  isSubmenu22Visible = false;
 
   toggleDropdown(section: string) {
     if (section === 'favorites') {
@@ -32,6 +39,20 @@ export class SidebarComponent {
     }
     else if (section === 'blogs') {
       this.isBlogsVisible = !this.isBlogsVisible;
+    } else if (section === 'Auth') {
+      this.isAuthVisible = !this.isAuthVisible;
+    }else if (section === 'Submenu1') {
+      this.isSubmenu1Visible = !this.isSubmenu1Visible;
+    }else if (section === 'Submenu1.1') {
+      this. isSubmenu11Visible = !this. isSubmenu11Visible;
+    }else if (section === 'Submenu1.2') {
+      this.isSubmenu12Visible = !this.isSubmenu12Visible;
+    }else if (section === 'Submenu2') {
+      this.isSubmenu2Visible = !this.isSubmenu2Visible;
+    }else if (section === 'Submenu2.1') {
+      this. isSubmenu21Visible = !this. isSubmenu21Visible;
+    }else if (section === 'Submenu2.2') {
+      this.isSubmenu22Visible = !this.isSubmenu22Visible;
     }
   }
 }

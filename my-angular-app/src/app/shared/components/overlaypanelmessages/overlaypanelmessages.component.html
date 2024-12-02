@@ -1,0 +1,61 @@
+<div class="overlay-card flex justify-content-center  border-round">
+    <p-button (onClick)="op.toggle($event)">
+        <div class="">
+            <i class="pi  pi-comments text-md border-none" pBadge value="6" severity="info"></i>
+        </div>
+    </p-button>
+    <p-overlayPanel #op class="p-0!important">
+        <div class="notifications flex flex-column gap-3 w-18rem">
+            <ul class=" list-none p-0 m-0">
+                <li class="flex justify-content-between align-items-center px-3 p-3 mb-3 cursor-pointer">
+                    <h6 class="m-0 font-semibold text-sm">Messages</h6>
+                    <span class="p-badge">5</span>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer">
+                        <div>
+                            <img src="../../../../assets/images/avatar-profile1.png">
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Hey! I sent the sales report  </h6>
+                            <span class="text-xs text-500">Dusana Semenov </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer">
+                        <div>
+                            <img src="../../../../assets/images/avatar-profile2.png">
+                        </div>
+                            <div>
+                                <h6 class="text-sm m-0 font-semibold">  OK. Let’s meet at 15 pm...  </h6>
+                                <span class="text-xs text-500">Edward Lindgren </span>
+                            </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer ">
+                        <div>
+                            <img src="../../../../assets/images/avatar-profile-3.png">
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold">  Presentation is ready   </h6>
+                            <span class="text-xs text-500">Noell Blue </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer ">
+                        <div>
+                            <img src="../../../../assets/images/avatar-profile4.png">
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold">  Faulty delivery on #959  </h6>
+                            <span class="text-xs text-500">Gvozden Boskovsky </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </p-overlayPanel>
+</div>

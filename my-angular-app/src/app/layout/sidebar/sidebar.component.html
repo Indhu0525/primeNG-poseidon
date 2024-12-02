@@ -1,8 +1,6 @@
 
-<div class="sidebar w-18rem">
-    <div class="overflow-y-auto">
-      
-               
+<div class="sidebar w-18rem h-full overflow-y-auto">
+    <div class="">
                 <ul class="list-none p-0 pl-4 m-0 overflow-hidden">
                     <ul class="list-none p-0 my-5">
                         <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer">
@@ -15,33 +13,34 @@
                             </a>
                         </li>
                     </ul>
+                    <!-- APPS -->
                     <ul class="list-none p-0 my-5">
                         <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
                             <span class="text-xs font-semibold">APPS</span>
                         </div>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 "  (click)="toggleDropdown('blogs')">
                                 <i class="pi pi-comment mr-2 " ></i>
                                 <span class="font-medium">Blog</span>
                                 <i class="pi pi-chevron-down ml-auto"></i>
                             </a>
                             <ul
-                                class="list-none py-0 pl-3 pr-0 m-0 bg-none"
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
                                 [ngClass]="{ 'hidden': !isBlogsVisible, 'slidedown': isBlogsVisible }"
                             >
-                            <li class="mb-1">
-                                <a class="flex align-items-center cursor-pointer mb-1 border-round text-700  transition-duration-150 transition-colors">
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
                                     <i class="pi pi-image mr-2 " ></i>
                                     <span class="font-medium">List</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="my-1 border-round">
                                 <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                     <i class="pi pi-list mr-2 " ></i>
                                     <span class="font-medium">Details</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="my-1 border-round">
                                 <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                     <i class="pi pi-pencil mr-2 " ></i>
                                     <span class="font-medium">Edit</span>
@@ -50,37 +49,37 @@
                             </ul>
                         </li>
                        
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-calendar mr-2 " ></i>
                                 <span class="font-medium">calendar</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-comments mr-2 " ></i>
                                 <span class="font-medium">chat</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-file mr-2 " ></i>
                                 <span class="font-medium">files</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-sliders-v mr-2 " ></i>
                                 <span class="font-medium">Kanban</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-envelope mr-2 " ></i>
                                 <span class="font-medium">Mails</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="my-1">
                             <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
                                 <i class="pi pi-check-square mr-2 " ></i>
                                 <span class="font-medium">Task List</span>
@@ -88,64 +87,467 @@
                         </li>
                     
                     </ul>
-                    <li>
-                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                            <i class="pi pi-bookmark mr-2"></i>
-                            <span class="font-medium">Bookmarks</span>
-                        </a>
-                    </li>
-                    <li>
-                        <div
-                            class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
-                            (click)="toggleDropdown('reports')"
-                        >
-                            <i class="pi pi-chart-line mr-2"></i>
-                            <span class="font-medium">Reports</span>
-                            <i class="pi pi-chevron-down ml-auto"></i>
+                    <!-- UI KIT -->
+                    <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">UI KIT</span>
                         </div>
-                        <ul
-                            class="list-none py-0 pl-3 pr-0 m-0 overflow-hidden"
-                            [ngClass]="{ 'hidden': !isReportsVisible, 'slidedown': isReportsVisible }"
-                        >
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                                    <i class="pi pi-table mr-2"></i>
-                                    <span class="font-medium">View</span>
+                     
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-id-card mr-2 " ></i>
+                                <span class="font-medium">form layout</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-check-square mr-2 " ></i>
+                                <span class="font-medium">input</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-bookmark mr-2 " ></i>
+                                <span class="font-medium">Float Label</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-exclamation-circle mr-2 " ></i>
+                                <span class="font-medium">Invalid state</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-box mr-2 " ></i>
+                                <span class="font-medium">button</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-table mr-2 " ></i>
+                                <span class="font-medium">Table</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-list mr-2 " ></i>
+                                <span class="font-medium">List</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-share-alt mr-2 " ></i>
+                                <span class="font-medium">Tree</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-tablet  mr-2 " ></i>
+                                <span class="font-medium">Panel</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-clone mr-2 " ></i>
+                                <span class="font-medium">Overlay</span>
+                            </a>
+                        </li>
+                    <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-image mr-2 " ></i>
+                                <span class="font-medium">Media</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-bars mr-2 " ></i>
+                                <span class="font-medium">Menu</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-comment mr-2 " ></i>
+                                <span class="font-medium">Message</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-file mr-2 " ></i>
+                                <span class="font-medium">file</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-chart-bar mr-2 " ></i>
+                                <span class="font-medium">Chart</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-circle-off mr-2 " ></i>
+                                <span class="font-medium">Misc</span>
+                            </a>
+                        </li>
+                    
+                    </ul>
+                      <!-- PRIME BLOCKS -->
+                     <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">PRIME BLOCKS</span>
+                        </div>
+                  
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-eye mr-2 " ></i>
+                                <span class="font-medium">Free Blocks</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-globe mr-2 " ></i>
+                                <span class="font-medium">All blocks</span>
+                            </a>
+                        </li>
+                    </ul>
+                      <!-- UTILITIES -->
+                    <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">UTILITIES</span>
+                        </div>
+                  
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-prime mr-2 " ></i>
+                                <span class="font-medium">primeicons</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-palette mr-2 " ></i>
+                                <span class="font-medium">colors</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-desktop mr-2 " ></i>
+                                <span class="font-medium">prime flex</span>
+                            </a>
+                        </li>
+                    </ul>
+                      <!-- PAGES -->
+                      <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">PAGES</span>
+                        </div>
+                          
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-globe mr-2 " ></i>
+                                <span class="font-medium">landing</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 "  (click)="toggleDropdown('Auth')">
+                                <i class="pi pi-user mr-2 " ></i>
+                                <span class="font-medium">Auth</span>
+                                <i class="pi pi-chevron-down ml-auto"></i>
+                            </a>
+                            <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': !isAuthVisible, 'slidedown': isBlogsVisible }"
+                            >
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                    <i class="pi pi-sign-in mr-2 " ></i>
+                                    <span class="font-medium">Login</span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                                    <i class="pi pi-search mr-2"></i>
-                                    <span class="font-medium">Search</span>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-times-circle mr-2 " ></i>
+                                    <span class="font-medium">error</span>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                            <i class="pi pi-users mr-2"></i>
-                            <span class="font-medium">Team</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                            <i class="pi pi-comments mr-2"></i>
-                            <span class="font-medium">Messages</span>
-                            <span class="inline-flex align-items-center justify-content-center ml-auto bg-primary border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                            <i class="pi pi-calendar mr-2"></i>
-                            <span class="font-medium">Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
-                            <i class="pi pi-cog mr-2"></i>
-                            <span class="font-medium">Settings</span>
-                        </a>
-                    </li>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-lock mr-2 " ></i>
+                                    <span class="font-medium">Access Denied</span>
+                                </a>
+                            </li>
+                            </ul>
+                        </li>
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-pencil mr-2 " ></i>
+                                <span class="font-medium">Crud</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-calendar mr-2 " ></i>
+                                <span class="font-medium">Timeline</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-dollar mr-2 " ></i>
+                                <span class="font-medium">Invoice</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-question-circle mr-2 " ></i>
+                                <span class="font-medium">Help</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-exclamation-circle mr-2 " ></i>
+                                <span class="font-medium">Not found</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-circle-off mr-2 " ></i>
+                                <span class="font-medium">Empty</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-question mr-2 " ></i>
+                                <span class="font-medium">FAQ</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-phone mr-2 " ></i>
+                                <span class="font-medium">contact us</span>
+                            </a>
+                        </li>
+                    
+                    </ul>
+                      <!-- ECOMMERCE -->
+                      <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">ECOMMERCE</span>
+                        </div>
+                     
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-image mr-2 " ></i>
+                                <span class="font-medium">Product overview</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-list mr-2 " ></i>
+                                <span class="font-medium">Product list</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-plus mr-2 " ></i>
+                                <span class="font-medium">New product</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-shopping-cart mr-2 " ></i>
+                                <span class="font-medium">shopping cart</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-check-square mr-2 " ></i>
+                                <span class="font-medium">checkout form</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-history mr-2 " ></i>
+                                <span class="font-medium">order history</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-file mr-2 " ></i>
+                                <span class="font-medium">order summary</span>
+                            </a>
+                        </li>
+                    </ul>
+                       <!-- USER MANAGEMENT -->
+                    <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">USER MANAGEMENT</span>
+                        </div>
+                  
+                       
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-list mr-2 " ></i>
+                                <span class="font-medium">list</span>
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <i class="pi pi-plus mr-2 " ></i>
+                                <span class="font-medium">create</span>
+                            </a>
+                        </li>
+                    </ul>
+                      <!-- HIERARCHY -->
+                      <ul class="list-none p-0 my-5">
+                        <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                            <span class="text-xs font-semibold">HIERARCHY</span>
+                        </div>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 "  (click)="toggleDropdown('Submenu1')">
+                                <i class="pi pi-align-left  mr-2 " ></i>
+                                <span class="font-medium">Submenu 1</span>
+                                <i class="pi pi-chevron-down ml-auto"></i>
+                            </a>
+                            <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': !isSubmenu1Visible, 'slidedown': isSubmenu1Visible }"
+                            >
+                            <li class="my-1 border-round bg-transparent">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors"(click)="toggleDropdown('Submenu1.1')">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.1</span>
+                                    <i class="pi pi-chevron-down ml-auto"></i>
+                                </a>
+                                <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': ! isSubmenu11Visible, 'slidedown':  isSubmenu11Visible }"
+                            >
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.1.1</span>
+                                </a>
+                            </li>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left  mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.1.2</span>
+                                </a>
+                            </li>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-pencil mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.1.3</span>
+                                </a>
+                            </li>
+                            </ul>
+                            </li>
+                            <li class="my-1 border-round bg-transparent">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors"(click)="toggleDropdown('Submenu1.2')">
+                                    <i class="pi pi-align-left  mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.2</span>
+                                    <i class="pi pi-chevron-down ml-auto"></i>
+                                </a>
+                                <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': ! isSubmenu12Visible, 'slidedown':  isSubmenu12Visible }"
+                            >
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 1.2.1</span>
+                                </a>
+                            </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="my-1">
+                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 "  (click)="toggleDropdown('Submenu2')">
+                                <i class="pi pi-align-left  mr-2 " ></i>
+                                <span class="font-medium">Submenu 2</span>
+                                <i class="pi pi-chevron-down ml-auto"></i>
+                            </a>
+                            <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': !isSubmenu2Visible, 'slidedown': isSubmenu2Visible }"
+                            >
+                            <li class="my-1 border-round bg-transparent">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors"(click)="toggleDropdown('Submenu2.1')">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.1</span>
+                                    <i class="pi pi-chevron-down ml-auto"></i>
+                                </a>
+                                <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': ! isSubmenu21Visible, 'slidedown':  isSubmenu21Visible }"
+                            >
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.1.1</span>
+                                </a>
+                            </li>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left  mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.1.2</span>
+                                </a>
+                            </li>
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                    <i class="pi pi-pencil mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.1.3</span>
+                                </a>
+                            </li>
+                            </ul>
+                            </li>
+                            <li class="my-1 border-round bg-transparent">
+                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors"(click)="toggleDropdown('Submenu2.2')">
+                                    <i class="pi pi-align-left  mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.2</span>
+                                    <i class="pi pi-chevron-down ml-auto"></i>
+                                </a>
+                                <ul
+                                class="list-none py-0 pl-3 pr-0 m-0 bg-transparent mb-1"
+                                [ngClass]="{ 'hidden': ! isSubmenu22Visible, 'slidedown':  isSubmenu22Visible }"
+                            >
+                            <li class="my-1 border-round">
+                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                    <i class="pi pi-align-left mr-2 " ></i>
+                                    <span class="font-medium">Submenu 2.2.1</span>
+                                </a>
+                            </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                             <!-- START -->
+                             <ul class="list-none p-0 my-5">
+                                <div class="pb-2 flex align-items-center justify-content-between text-600 cursor-pointer apps">
+                                    <span class="text-xs font-semibold">START</span>
+                                </div>
+                          
+                               
+                                <li class="my-1">
+                                    <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                        <i class="pi pi-shopping-cart mr-2 " ></i>
+                                        <span class="font-medium">Buy Now</span>
+                                    </a>
+                                </li>
+                                <li class="my-1">
+                                    <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                        <i class="pi pi-info-circle mr-2 " ></i>
+                                        <span class="font-medium">Documentation</span>
+                                    </a>
+                                </li>
+                            </ul>
+                  
                 </ul>
           
     </div>

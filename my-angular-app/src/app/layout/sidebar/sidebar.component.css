@@ -1,0 +1,26 @@
+.sidebar {
+  background-color: #3C4962;
+}
+.sidebar span {
+  color: #CDD2DB;
+}
+.sidebar li,
+.sidebar .pi {
+  color: #E5E8EC;
+  font-size: 0.8rem;
+}
+.sidebar li a,
+.sidebar .pi a {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.sidebar li :hover,
+.sidebar .pi :hover {
+  background-color: #59667D;
+}
+.sidebar li .apps,
+.sidebar .pi .apps {
+  background-color: none;
+}/*# sourceMappingURL=sidebar.component.css.map */

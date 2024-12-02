@@ -1,0 +1,67 @@
+<div class="overlay-card flex justify-content-center  border-round">
+    <p-button (onClick)="op.toggle($event)">
+        <div class="">
+            <i class="pi pi-cog text-md border-none" pBadge value="2" severity="info"></i>
+        </div>
+    </p-button>
+    <p-overlayPanel #op class="p-0!important">
+        <div class="notifications flex flex-column gap-3 w-18rem">
+            <ul class=" list-none p-0 m-0">
+                <li class="flex justify-content-between align-items-center px-3 p-3 mb-3 cursor-pointer">
+                    <h6 class="m-0 font-semibold text-sm">Notifications</h6>
+                    <span class="p-badge">3</span>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer">
+                        <div
+                            class="flex align-items-center justify-content-center border-1 border-circle border-transparent bg-blue-100 text-500 p-2">
+                            <i class="pi pi-shopping-cart text-lg text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Order <span>#2254</span> is placed </h6>
+                            <span class="text-xs text-500">Total Amount of <span
+                                    class=" font-semibold">$34.50</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer">
+                        <div
+                            class="flex align-items-center justify-content-center border-1 border-circle border-transparent bg-cyan-100 text-500 p-2">
+                            <i class="pi pi-clock text-lg text-cyan-500"></i></div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Meeting with <span>AF04</span> Team </h6><span
+                                class="text-xs text-500">Google Meets</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer ">
+                        <div
+                            class="flex align-items-center justify-content-center border-1 border-circle border-transparent bg-pink-100 text-500 p-2">
+                            <i class="pi pi-th-large text-lg text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Task <span>#41</span> is complete </h6><span
+                                class="text-xs text-500">9 Remaining Tasks</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer ">
+                        <div
+                            class="flex align-items-center justify-content-center border-1 border-circle border-transparent bg-blue-100 text-500 p-2">
+                            <i class="pi pi-shopping-cart text-lg text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Order <span>#2255</span> is placed </h6>
+                            <span
+                                class="text-xs text-500">Total Amount of <span
+                                    class="font-semibold">$40.45</span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </p-overlayPanel>
+</div>
