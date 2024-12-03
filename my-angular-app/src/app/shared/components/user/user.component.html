@@ -1,0 +1,70 @@
+<div class=" flex justify-content-center  border-round">
+    <p-button (onClick)="op.toggle($event)">
+        <div class="lg:flex gap-2 align-items-center hidden ">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+            <div class="flex flex-column">
+                <span class="font-medium text-sm">Peter Taylor</span>
+                <p class="text-xs m-0">Webmaster</p>
+            </div>
+        </div>
+    </p-button>
+    <p-overlayPanel #op class="p-0!important">
+        <div class="user notifications flex flex-column gap-3 w-18rem">
+            <ul class=" list-none p-0 m-0">
+                <li class="user-head flex justify-content-between align-items-center px-3 p-3 mb-3 cursor-pointer">
+                    <div class="lg:flex gap-2 align-items-center hidden">
+                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                        <div class="flex flex-column text-white">
+                            <span class="font-medium text-sm">Peter Taylor</span>
+                            <p class="text-xs m-0">Webmaster</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer align-items-center">
+                        <div
+                            class="flex align-items-center justify-content-center text-500 p-2">
+                            <i class="pi pi-star text-lg "></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Settings  </h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer align-items-center">
+                        <div
+                            class="flex align-items-center justify-content-center text-500 p-2">
+                            <i class="pi pi-file text-lg "></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Terms of Usage  </h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer align-items-center">
+                        <div
+                            class="flex align-items-center justify-content-center text-500 p-2">
+                            <i class="pi pi-image text-lg "></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Support  </h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="py-2 px-3 flex gap-2 cursor-pointer align-items-center">
+                        <div
+                            class="flex align-items-center justify-content-center text-500 p-2">
+                            <i class="pi pi-power-off text-lg "></i>
+                        </div>
+                        <div>
+                            <h6 class="text-sm m-0 font-semibold"> Logout  </h6>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </p-overlayPanel>
+</div>

@@ -1,0 +1,34 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+.rightpanel{
+    padding: 0;
+    @include width-height(2rem,2rem);
+    background-color: $icon-bg-color;
+    border-radius: 18px;
+    .p-button{
+        padding: 0;
+        @include width-height(2rem,2rem);
+    }
+}
+.p-sidebar{
+    .p-sidebar-header {
+        display: none;
+     }
+     .p-sidebar-content {
+     @include padding(1.5rem,1rem,1.5rem,1rem);
+     color:$rightpaneltext;
+     }
+     .p-checkbox {
+        @include width-height(32px,32px);
+        .p-checkbox-box{
+            @include width-height(32px,32px);
+            border-radius: 50%;
+         }
+         .p-highlight{
+            background-color:transparent;
+        }
+        .p-checkbox-icon{
+            color: $rightpaneltext;
+        }
+     }
+} 

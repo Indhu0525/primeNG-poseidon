@@ -1,0 +1,123 @@
+<div class="card flex justify-content-center">
+    <p-sidebar [(visible)]="sidebarVisible2" position="right">
+        <h3 class="mt-5 mx-3 mb-2 text-color opacity-80 text-xl font-medium">Your Tasks Today</h3>
+        <ul class="py-5 p-0 m-0">
+           <li class="flex py-2 px-4 align-items-center">
+            <div class="">
+                <p-checkbox 
+                    [binary]="true" 
+                    inputId="binary" />
+            </div>
+            <div class="flex flex-column ml-3 ">
+                <h6 class="m-0 line-through text-sm font-medium"> Sales reports </h6>
+            <span class="text-xs text-gray">
+                Today
+            </span>
+            </div>
+           </li>
+           <li class="flex py-2 px-4 align-items-center">
+            <div class="">
+                <p-checkbox  
+                  
+                    [binary]="true" 
+                    inputId="binary" />
+            </div>
+            <div class="flex flex-column ml-3 ">
+                <h6 class="m-0 line-through text-sm font-medium"> Pay invoices</h6>
+            <span class="text-xs text-gray">
+                Today
+            </span>
+            </div>
+           </li>
+           <li class="flex py-2 px-4 align-items-center">
+            <div class="">
+                <p-checkbox 
+                   
+                    [binary]="true" 
+                    inputId="binary" />
+            </div>
+            <div class="flex flex-column ml-3 ">
+                <h6 class="m-0 text-sm font-medium"> Dinner with Tony </h6>
+            <span class="text-xs text-gray">
+                Today, 22:36
+            </span>
+            </div>
+           </li>
+           <li class="flex py-2 px-4 align-items-center">
+            <div class="">
+                <p-checkbox 
+                 
+                    [binary]="true" 
+                    inputId="binary" />
+            </div>
+            <div class="flex flex-column ml-3 ">
+                <h6 class="m-0  text-sm font-medium">  Client meeting  </h6>
+            <span class="text-xs text-gray">
+                Today
+            </span>
+            </div>
+           </li>
+        </ul>
+        <hr>
+        <h3 class="mt-5 mx-3 mb-2 text-color opacity-80 text-xl font-medium">Upcoming</h3>
+        <ul class="py-5 p-0 m-0">
+            <li class="flex py-2 px-4 align-items-center">
+             <div class="">
+                 <p-checkbox 
+                    
+                     [binary]="true" 
+                     inputId="binary" />
+             </div>
+             <div class="flex flex-column ml-3 ">
+                 <h6 class="m-0  text-sm font-medium">  New representative meeting  </h6>
+             <span class="text-xs text-gray">
+                 27, May
+             </span>
+             </div>
+            </li>
+            <li class="flex py-2 px-4 align-items-center">
+             <div class="">
+                 <p-checkbox  
+                   
+                     [binary]="true" 
+                     inputId="binary" />
+             </div>
+             <div class="flex flex-column ml-3 ">
+                 <h6 class="m-0 text-sm font-medium"> Flight tickets </h6>
+             <span class="text-xs text-gray">
+                 28, May
+             </span>
+             </div>
+            </li>
+            <li class="flex py-2 px-4 align-items-center">
+             <div class="">
+                 <p-checkbox 
+                    
+                     [binary]="true" 
+                     inputId="binary" />
+             </div>
+             <div class="flex flex-column ml-3 ">
+                 <h6 class="m-0  text-sm font-medium">  Generate charts  </h6>
+             <span class="text-xs text-gray">
+                 29, May
+             </span>
+             </div>
+            </li>
+            <li class="flex py-2 px-4 align-items-center">
+             <div class="">
+                 <p-checkbox 
+                  
+                     [binary]="true" 
+                     inputId="binary" />
+             </div>
+             <div class="flex flex-column ml-3 ">
+                 <h6 class="m-0  text-sm font-medium">  Delete old files  </h6>
+             <span class="text-xs text-gray">
+                 30, May
+             </span>
+             </div>
+            </li>
+         </ul>
+    </p-sidebar>
+    <p-button type="button" class="rightpanel" (onClick)="sidebarVisible2 = true" icon="pi pi-arrow-left" />
+</div>

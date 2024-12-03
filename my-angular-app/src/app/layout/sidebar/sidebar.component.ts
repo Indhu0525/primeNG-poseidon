@@ -17,9 +17,11 @@ export class SidebarComponent {
   closeCallback(e: Event): void {
     this.sidebarRef.close(e);
 }
+sidebarVisible: boolean = false;
 
-
-  sidebarVisible: boolean = false;
+  // toggleSidebar() {
+  //   this.sidebarVisible = !this.sidebarVisible;
+  // }
   isFavoritesVisible = false;
   isReportsVisible = false;
   isBlogsVisible = false;

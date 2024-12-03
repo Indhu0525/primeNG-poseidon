@@ -14,8 +14,11 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from "../../shared/shared.module";
 import { OverlaypanelmessagesComponent } from "../../shared/components/overlaypanelmessages/overlaypanelmessages.component";
 import { SettingsComponent } from "../../shared/components/settings/settings.component";
+import { UserComponent } from "../../shared/components/user/user.component";
+import { LayoutRightpanelComponent } from '../../shared/components/layout-rightpanel/layout-rightpanel.component';
+
 @Component({
-  imports: [SettingsComponent,InputGroupModule, InputGroupAddonModule, OverlaypanelmessagesComponent,ChipsModule, CommonModule, AvatarGroupModule, ButtonModule, IconFieldModule, InputTextModule, AvatarModule, InputIconModule, BadgeModule, OverlayPanelModule, SharedModule],
+  imports: [LayoutRightpanelComponent,SettingsComponent,InputGroupModule, InputGroupAddonModule, OverlaypanelmessagesComponent,ChipsModule, CommonModule, AvatarGroupModule, ButtonModule, IconFieldModule, InputTextModule, AvatarModule, InputIconModule, BadgeModule, OverlayPanelModule, SharedModule,UserComponent],
   templateUrl: './header.component.html',
   selector: 'app-header',
   standalone: true,

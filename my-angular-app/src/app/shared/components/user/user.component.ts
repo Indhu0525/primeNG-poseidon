@@ -7,14 +7,16 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ChipsModule } from 'primeng/chips';
 import { CommonModule } from '@angular/common';
 import { BadgeModule } from 'primeng/badge';
+import { AvatarModule } from 'primeng/avatar'; //heade avatar
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @Component({
-  selector: 'app-settings',
-  imports: [BadgeModule,OverlayPanelModule,InputGroupModule,InputGroupAddonModule,ButtonModule,InputTextModule,ChipsModule,CommonModule,],
-  templateUrl: './settings.component.html',
-  styleUrl: './settings.component.scss',
+  selector: 'app-user',
+  imports: [BadgeModule,OverlayPanelModule,InputGroupModule,InputGroupAddonModule,ButtonModule,InputTextModule,ChipsModule,CommonModule,AvatarModule,AvatarGroupModule],
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
-export class SettingsComponent {
+export class UserComponent {
 
 }
