@@ -1,10 +1,11 @@
 import { Component,ViewEncapsulation,OnInit  } from '@angular/core';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { MenuItem } from 'primeng/api';
-
+import { ChartsModule } from '../../charts/charts.module';
+import { DashboardchartComponent } from '../../charts/dashboardchart/dashboardchart.component';
 @Component({
   selector: 'app-dashboard',
-  imports: [BreadcrumbModule],
+  imports: [BreadcrumbModule,ChartsModule,DashboardchartComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
   standalone: true,
@@ -17,13 +18,9 @@ export class DashboardComponent {
 
   ngOnInit() {
       this.items = [
-          { label: 'Electronics' }, 
-          { label: 'Computer' }, 
-          { label: 'Accessories' }, 
-          { label: 'Keyboard' }, 
-          { label: 'Wireless' }
+          { label: 'DASHBOARD' }, 
       ];
 
-      this.home = { icon: 'pi pi-home', routerLink: '/' };
+      // this.home = { icon: 'pi pi-home', routerLink: '/' };
   }
 }

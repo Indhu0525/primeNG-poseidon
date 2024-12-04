@@ -16,6 +16,7 @@ import { OverlaypanelmessagesComponent } from "../../shared/components/overlaypa
 import { SettingsComponent } from "../../shared/components/settings/settings.component";
 import { UserComponent } from "../../shared/components/user/user.component";
 import { LayoutRightpanelComponent } from '../../shared/components/layout-rightpanel/layout-rightpanel.component';
+import { SidebarService } from '../../services/sidebar.service';
 
 @Component({
   imports: [LayoutRightpanelComponent,SettingsComponent,InputGroupModule, InputGroupAddonModule, OverlaypanelmessagesComponent,ChipsModule, CommonModule, AvatarGroupModule, ButtonModule, IconFieldModule, InputTextModule, AvatarModule, InputIconModule, BadgeModule, OverlayPanelModule, SharedModule,UserComponent],
@@ -26,5 +27,9 @@ import { LayoutRightpanelComponent } from '../../shared/components/layout-rightp
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
+  constructor(private sidebarService: SidebarService) {}
 
+  toggleSidebar() {
+    this.sidebarService.toggleSidebar();
+  }
 }

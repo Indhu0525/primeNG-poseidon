@@ -6,11 +6,13 @@ import { AvatarModule } from 'primeng/avatar';
 import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
+import { SidebarService } from '../../services/sidebar.service';
 @Component({
   selector: 'app-sidebar',
   imports: [StyleClassModule,AvatarModule,RippleModule,ButtonModule,SidebarModule,CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
+  standalone: true,
 })
 export class SidebarComponent {
   @ViewChild('sidebarRef') sidebarRef!: Sidebar;
@@ -56,5 +58,15 @@ sidebarVisible: boolean = false;
     }else if (section === 'Submenu2.2') {
       this.isSubmenu22Visible = !this.isSubmenu22Visible;
     }
+  }
+
+  isVisible = false;
+
+  constructor(private sidebarService: SidebarService) {}
+
+  ngOnInit() {
+    this.sidebarService.isVisible$.subscribe((visible) => {
+      this.isVisible = visible;
+    });
   }
 }

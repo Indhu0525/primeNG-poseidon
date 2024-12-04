@@ -1,0 +1,38 @@
+.rightpanel {
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: #E8F1F8;
+  border-radius: 18px;
+}
+.rightpanel .p-button {
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.p-sidebar .p-sidebar-header {
+  display: none;
+}
+.p-sidebar .p-sidebar-content {
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  color: #495057;
+}
+.p-sidebar .p-checkbox {
+  width: 32px;
+  height: 32px;
+}
+.p-sidebar .p-checkbox .p-checkbox-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.p-sidebar .p-checkbox .p-highlight {
+  background-color: transparent;
+}
+.p-sidebar .p-checkbox .p-checkbox-icon {
+  color: #495057;
+}/*# sourceMappingURL=layout-rightpanel.component.css.map */
