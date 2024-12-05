@@ -1,0 +1,7 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+
+.pie-container {
+  @include width-height(200px,200px);
+  }

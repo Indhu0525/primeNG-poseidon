@@ -2,11 +2,12 @@
     <p-breadcrumb [model]="items" />
     <div class="p-3">
         <div class="grid m-0 ">
-            <div class="col-12 md:col-6 lg:col-3 p-3 ">
+            <div class="col-12 lg:col-6 xl:col-3 p-3 ">
                 <div class="bg-white shadow-3 border-round p-3">
                     <div class="flex justify-content-between   mb-4">
                         <span class="text-gray-500 font-semibold text-sm">Revenue Status</span>
-                        <div class="arrow border border-circle flex justify-content-center align-items-center">
+                        <div
+                            class="arrow border border-circle flex justify-content-center align-items-center cursor-pointer">
                             <i class="pi pi-arrow-up-right mt-1 text-surface-500" style="font-size: 0.7rem"></i>
                         </div>
                     </div>
@@ -48,18 +49,19 @@
                     </div>
                     <div class="mt-3 flex align-items-center gap-1">
                         <span class="text-cyan-500 font-semibold">
-                            <i class="pi pi-arrow-up "style="font-size:0.7rem"></i>
+                            <i class="pi pi-arrow-up " style="font-size:0.7rem"></i>
                             <span class="text-sm">55%</span>
                         </span>
                         <span class="text-xs text-gray-500">increase in today sales</span>
                     </div>
                 </div>
             </div>
-            <div class="col-12 md:col-6 lg:col-3 p-3 ">
+            <div class="col-12 lg:col-6 xl:col-3 p-3 ">
                 <div class="bg-white shadow-3 border-round p-3">
                     <div class="flex justify-content-between   mb-4">
                         <span class="text-gray-500 font-semibold text-sm">Page View</span>
-                        <div class="arrow border border-circle flex justify-content-center align-items-center">
+                        <div
+                            class="arrow border border-circle flex justify-content-center align-items-center cursor-pointer">
                             <i class="pi pi-arrow-up-right mt-1 text-surface-500" style="font-size: 0.7rem"></i>
                         </div>
                     </div>
@@ -101,18 +103,19 @@
                     </div>
                     <div class="mt-3 flex align-items-center gap-1">
                         <span class="text-red-500 font-semibold">
-                            <i class="pi pi-arrow-down"style="font-size:0.7rem"></i>
+                            <i class="pi pi-arrow-down" style="font-size:0.7rem"></i>
                             <span class="text-sm">12%</span>
                         </span>
                         <span class="text-xs text-gray-500">decrease in today sales</span>
                     </div>
                 </div>
             </div>
-            <div class="col-12 md:col-6 lg:col-3 p-3 ">
+            <div class="col-12 lg:col-6 xl:col-3 p-3 ">
                 <div class="bg-white shadow-3 border-round p-3">
                     <div class="flex justify-content-between   mb-4">
                         <span class="text-gray-500 font-semibold text-sm">Bounce Rate</span>
-                        <div class="arrow border border-circle flex justify-content-center align-items-center">
+                        <div
+                            class="arrow border border-circle flex justify-content-center align-items-center cursor-pointer">
                             <i class="pi pi-arrow-up-right mt-1 text-surface-500" style="font-size: 0.7rem"></i>
                         </div>
                     </div>
@@ -154,18 +157,19 @@
                     </div>
                     <div class="mt-3 flex align-items-center gap-1">
                         <span class="text-cyan-500 font-semibold">
-                            <i class="pi pi-arrow-up"style="font-size:0.7rem"></i>
+                            <i class="pi pi-arrow-up" style="font-size:0.7rem"></i>
                             <span class="text-sm">6%</span>
                         </span>
                         <span class="text-xs text-gray-500">increase in today sales</span>
                     </div>
                 </div>
             </div>
-            <div class="col-12 md:col-6 lg:col-3 p-3 ">
+            <div class="col-12 lg:col-6 xl:col-3 p-3 ">
                 <div class="bg-white shadow-3 border-round p-3">
                     <div class="flex justify-content-between   mb-4">
                         <span class="text-gray-500 font-semibold text-sm">Products Sale Rate</span>
-                        <div class="arrow border border-circle flex justify-content-center align-items-center">
+                        <div
+                            class="arrow border border-circle flex justify-content-center align-items-center cursor-pointer">
                             <i class="pi pi-arrow-up-right mt-1 text-surface-500" style="font-size: 0.7rem"></i>
                         </div>
                     </div>
@@ -207,11 +211,353 @@
                     </div>
                     <div class="mt-3 flex align-items-center gap-1">
                         <span class="text-red-500 font-semibold">
-                            <i class="pi pi-arrow-down"style="font-size:0.7rem"></i>
+                            <i class="pi pi-arrow-down" style="font-size:0.7rem"></i>
                             <span class="text-sm">1.1%</span>
                         </span>
                         <span class="text-xs text-gray-500">decrease in today sales</span>
                     </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid nested-grid m-0">
+            <div class="col-12 xl:col-8 p-3">
+                <div class="bg-white shadow-3 border-round px-4 py-3  h-full ">
+                    <div class="border-round-sm mb-4">
+                        <span class="text-gray-500 font-semibold text-sm">Top products</span>
+                    </div>
+                    <div class="block md:flex ">
+                        <button
+                            class="flex flex-column bg-gray-100 px-4 py-2 mr-0 md:mr-4 border-none border-round mb-2 md:mb-0">
+                            <span class="text-gray-500 font-semibold text-sm mb-2">Current week</span>
+                            <span
+                                class="text-blue-500 hover:text-blue-300 text-500 font-semibold text-2xl">$455.55</span>
+                        </button>
+                        <button class="flex flex-column bg-gray-100 px-4 py-2 border-none border-round">
+                            <span class="text-gray-500 font-semibold text-sm mb-2">Previous week</span>
+                            <span class="text-gray-400 hover:text-blue-300 text-500 font-medium text-2xl">$244.40</span>
+                        </button>
+                    </div>
+                    <div>
+                        <app-productschart></app-productschart>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 xl:col-4 ">
+                <div class="grid m-0">
+                    <div class="col-12">
+                        <div class="bg-white shadow-3 border-round px-3 py-3">
+                            <div class="flex flex-column">
+                                <span class="text-gray-500 font-semibold text-sm mb-2">Traffic</span>
+                                <span class="text-gray-700 font-semibold text-xs">26 May - 27 May</span>
+                            </div>
+                            <app-trafficchart #trafficChart></app-trafficchart>
+                            <div class="md:flex gap-2 justify-content-between mt-5 block">
+                                <button
+                                    class="flex flex-column primary700 border-round shadow-3 justify-content-center align-items-center px-3 py-2 border-none w-full cursor-pointer mb-2 md:mb-0"
+                                    (click)="trafficChart.updateChart('facebook')">
+                                    <span class="text-white mb-3 text-xs font-semibold">48%</span>
+                                    <i class="pi pi-facebook text-3xl text-white"></i>
+                                    <span class="text-white mt-3 text-xs font-semibold">Facebook</span>
+                                </button>
+                                <button
+                                    class="flex flex-column primary700 border-round shadow-3 justify-content-center align-items-center px-3 py-2 border-none w-full cursor-pointer  mb-2 md:mb-0"
+                                    (click)="trafficChart.updateChart('twitter')">
+                                    <span class="text-white mb-3 text-xs font-semibold">26%</span>
+                                    <i class="pi pi-twitter text-3xl text-white"></i>
+                                    <span class="text-white mt-3 text-xs font-semibold">Twitter</span>
+                                </button>
+                                <button
+                                    class="flex flex-column primary700 border-round shadow-3 justify-content-center align-items-center px-3 py-2 border-none w-full cursor-pointer"
+                                    (click)="trafficChart.updateChart('github')">
+                                    <span class="text-white mb-3 text-xs font-semibold">17%</span>
+                                    <i class="pi pi-github text-3xl text-white"></i>
+                                    <span class="text-white mt-3 text-xs font-semibold">GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 ">
+                        <div class="border-round primary700 p-3">
+                            <div class="flex justify-content-between">
+                                <div class="flex flex-column">
+                                    <span class="text-white font-semibold text-sm mb-1">Traffic</span>
+                                    <span class="text-white font-semibold text-xs">26 May - 27 May</span>
+                                </div>
+                                <span class="text-white font-semibold text-sm mb-2">183 / 255</span>
+                            </div>
+
+                            <div class="text-center   font-bold">
+                                <app-piechart></app-piechart>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid m-0">
+            <div class="col-12 md:col-6 xl:col-4 p-3">
+                <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
+                    <span class="text-gray-500 font-semibold text-sm pb-2">Leaderboard</span>
+                        <ul class="m-0 p-0 ">
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Peter Taylor</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$224.44</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Nicolina Lindholm</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$86.05</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Su Hua</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$59.44</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/walter.jpg"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Maria Illescas</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$12.32</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Ezequiel Dengra</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$12.44</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Conan Matusov</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$22.44</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Hector Mariano</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">$24.44</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+
+                        </ul>
+                  
+                </div>
+            </div>
+            <div class="col-12 md:col-6 xl:col-4 p-3">
+                <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
+                    <span class="text-gray-500 font-semibold text-sm pb-2">Product List</span>
+                        <ul class="m-0 p-0 mt-4">
+                            <li class="flex justify-content-between mb-4">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <img src="../../../assets/images/nike-shoe.png"class="mr-3">
+                                    <div class="flex flex-column">
+                                        <span class="text-500 font-medium text-sm">Peter Taylor</span>
+                                        <span class="text-500 font-medium text-sm">Sold <span class="text-700">250</span> times</span>
+                                    </div>
+                                       
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mb-4">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <img src="../../../assets/images/nike-watch.png"class="mr-3">
+                                    <div class="flex flex-column">
+                                        <span class="text-500 font-medium text-sm">Nicolina Lindholm</span>
+                                        <span class="text-500 font-medium text-sm">Sold <span class="text-700">180</span> times</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mb-4">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <img src="../../../assets/images/bottle.png"class="mr-3">
+                                    <div class="flex flex-column">
+                                        <span class="text-500 font-medium text-sm">Su Hua</span>
+                                        <span class="text-500 font-medium text-sm">Sold <span class="text-700">50</span> times</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mb-4">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <img src="../../../assets/images/headphone.png"class="mr-3">
+                                    <div class="flex flex-column">
+                                        <span class="text-500 font-medium text-sm">Maria Illescas</span>
+                                        <span class="text-500 font-medium text-sm">Sold <span class="text-700">24</span> times</span>
+                                    </div>
+                                 
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <i class="pi pi-arrow-down text-red-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mb-4">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <img src="../../../assets/images/bike.png"class="mr-3">
+                                    <div class="flex flex-column">
+                                        <span class="text-500 font-medium text-sm">Ezequiel Dengra</span>
+                                        <span class="text-500 font-medium text-sm">Sold <span class="text-700">24</span> times</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+
+                        </ul>
+                  
+                </div>
+            </div>
+            <div class="col-12 md:col-6 xl:col-4 p-3">
+                <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
+                    <span class="text-gray-500 font-semibold text-sm pb-2">Leaderboard</span>
+                        <ul class="m-0 p-0 ">
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Hector Mariano</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 1</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/walter.jpg"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Maria Illescas</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 2</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Peter Taylor</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 3</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Nicolina Lindholm</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 3</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Su Hua</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                         
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Ezequiel Dengra</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                            <li class="flex justify-content-between mt-3">
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <p-avatar
+                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png"
+                                        styleClass="mr-3" shape="circle" />
+                                        <span class="text-500 font-medium text-sm">Conan Matusov</span>
+                                </div>
+                                <div class="flex justify-content-between align-items-center cursor-pointer">
+                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
+                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                </div>
+                            </li>
+                     
+
+                        </ul>
+                  
                 </div>
             </div>
         </div>
