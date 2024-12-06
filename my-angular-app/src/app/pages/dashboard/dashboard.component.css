@@ -46,4 +46,14 @@
 
 .primary700 {
   background-color: #1763a7;
+}
+
+.seller-list .p-button {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #607d8b;
+}
+
+.p-progressbar .p-progressbar-value {
+  background: #00bcd4;
 }/*# sourceMappingURL=dashboard.component.css.map */

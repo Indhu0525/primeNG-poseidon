@@ -278,7 +278,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-12 ">
                         <div class="border-round primary700 p-3">
                             <div class="flex justify-content-between">
@@ -416,7 +415,6 @@
                                         <span class="text-500 font-medium text-sm">Nicolina Lindholm</span>
                                         <span class="text-500 font-medium text-sm">Sold <span class="text-700">180</span> times</span>
                                     </div>
-                                        
                                 </div>
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
@@ -460,104 +458,277 @@
                                     <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
                                 </div>
                             </li>
-
                         </ul>
-                  
                 </div>
             </div>
             <div class="col-12 md:col-6 xl:col-4 p-3">
                 <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
                     <span class="text-gray-500 font-semibold text-sm pb-2">Leaderboard</span>
                         <ul class="m-0 p-0 ">
-                            <li class="flex justify-content-between mt-3">
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <p-avatar
-                                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Hector Mariano</span>
+                            <li class="flex justify-content-between mt-3 align-items-center">
+                                <div class="flex align-items-center cursor-pointer">
+                                  <p-avatar
+                                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                                    styleClass="mr-3 w-2rem h-2rem"
+                                    shape="circle"
+                                  ></p-avatar>
+                                  <span class="text-500 font-medium text-sm"style="min-width:100px">Hector Mariano</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 1</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm">Tier 1</span>
+                                  <p-rating [(ngModel)]="rating1" [cancel]="false" [stars]="3" class="text-xs"></p-rating>
+                                <div class="seller-list">
+                                  <p-button
+                                    (onClick)="op.toggle($event)"
+                                    icon="pi pi-ellipsis-v text-sm text-gray-500 p-0"
+                                    class=""
+                                  ></p-button>
+                                  <p-overlayPanel #op>
+                                    <div class="flex flex-column">
+                                      <button
+                                        class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                      >
+                                        <i class="pi pi-user text-gray-600 text-sm"></i>
+                                        View Profile
+                                      </button>
+                                      <button
+                                        class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                      >
+                                        <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                        Update Profile
+                                      </button>
+                                      <button
+                                        class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                      >
+                                        <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                        Delete Profile
+                                      </button>
+                                    </div>
+                                  </p-overlayPanel>
                                 </div>
-                            </li>
-                            <li class="flex justify-content-between mt-3">
+                              </li>
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/walter.jpg"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Maria Illescas</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Maria Illescas</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 2</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
-                                </div>
+                                <span class="text-800 font-medium text-sm">Tier 1</span>
+                                    <p-rating [(ngModel)]="rating1" [cancel]="false" [stars]="3" class="text-xs"></p-rating>
+                                  <div class="seller-list">
+                                    <p-button
+                                      (onClick)="op.toggle($event)"
+                                      icon="pi pi-ellipsis-v text-sm text-gray-500 p-0"
+                                      class=""
+                                    ></p-button>
+                                    <p-overlayPanel #op>
+                                      <div class="flex flex-column">
+                                        <button
+                                          class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                        >
+                                          <i class="pi pi-user text-gray-600 text-sm"></i>
+                                          View Profile
+                                        </button>
+                                        <button
+                                          class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                        >
+                                          <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                          Update Profile
+                                        </button>
+                                        <button
+                                          class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white"
+                                        >
+                                          <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                          Delete Profile
+                                        </button>
+                                      </div>
+                                    </p-overlayPanel>
+                                  </div>
                             </li>
-                            <li class="flex justify-content-between mt-3">
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Peter Taylor</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Peter Taylor</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 3</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm ">Tier 1</span>
+                                        <p-rating [(ngModel)]="rating1" [cancel]="false" [stars]="3" class="text-xs"/>
+                                <div class="seller-list">
+                                    <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-gray-500 p-0" class=""/>
+                                    <p-overlayPanel #op>
+                                        <div class="flex flex-column ">
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-user text-gray-600 text-sm"></i>
+                                                View Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                                Update Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                                Delete Profile
+                                            </button>
+                                        </div>
+                                    </p-overlayPanel>
                                 </div>
                             </li>
-                            <li class="flex justify-content-between mt-3">
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Nicolina Lindholm</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Nicolina </span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 3</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm mr-2">Tier 1</span>
+                                        <p-rating [(ngModel)]="rating1" [cancel]="false" [stars]="3" class="text-xs"/>
+                                <div class="seller-list">
+                                    <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-gray-500 p-0" class=""/>
+                                    <p-overlayPanel #op>
+                                        <div class="flex flex-column ">
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-user text-gray-600 text-sm"></i>
+                                                View Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                                Update Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                                Delete Profile
+                                            </button>
+                                        </div>
+                                    </p-overlayPanel>
                                 </div>
                             </li>
-                            <li class="flex justify-content-between mt-3">
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Su Hua</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Su Hua</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm ">Tier 1</span>
+                                        <p-rating [(ngModel)]="rating2" [cancel]="false" [stars]="3" class="text-xs"/>
+                                <div class="seller-list">
+                                    <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-gray-500 p-0" class=""/>
+                                    <p-overlayPanel #op>
+                                        <div class="flex flex-column ">
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-user text-gray-600 text-sm"></i>
+                                                View Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                                Update Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                                Delete Profile
+                                            </button>
+                                        </div>
+                                    </p-overlayPanel>
                                 </div>
                             </li>
                          
-                            <li class="flex justify-content-between mt-3">
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Ezequiel Dengra</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Ezequiel Dengra</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm ">Tier 1</span>
+                                    <p-rating [(ngModel)]="rating2" [cancel]="false" [stars]="3" class="text-xs"/>
+                                <div class="seller-list">
+                                    <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-gray-500 p-0" class=""/>
+                                    <p-overlayPanel #op>
+                                        <div class="flex flex-column ">
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-user text-gray-600 text-sm"></i>
+                                                View Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                                Update Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                                Delete Profile
+                                            </button>
+                                        </div>
+                                    </p-overlayPanel>
                                 </div>
                             </li>
-                            <li class="flex justify-content-between mt-3">
+                            <li class="flex justify-content-between mt-3 align-items-center">
                                 <div class="flex justify-content-between align-items-center cursor-pointer">
                                     <p-avatar
                                         image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png"
-                                        styleClass="mr-3" shape="circle" />
-                                        <span class="text-500 font-medium text-sm">Conan Matusov</span>
+                                        styleClass="mr-3 w-2rem h-2rem" shape="circle" />
+                                        <span class="text-500 font-medium text-sm"style="min-width:100px">Conan Matusov</span>
                                 </div>
-                                <div class="flex justify-content-between align-items-center cursor-pointer">
-                                    <span class="text-800 font-medium text-sm mr-3">Tier 4</span>
-                                    <i class="pi pi-arrow-up text-cyan-500 text-sm"></i>
+                                <span class="text-800 font-medium text-sm ">Tier 1</span>
+                                    <p-rating [(ngModel)]="rating1" [cancel]="false" [stars]="3" class="text-xs"/>
+                                <div class="seller-list">
+                                    <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-gray-500 p-0" class=""/>
+                                    <p-overlayPanel #op>
+                                        <div class="flex flex-column ">
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-user text-gray-600 text-sm"></i>
+                                                View Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                                                Update Profile
+                                            </button>
+                                            <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white">
+                                                <i class="pi pi-trash text-gray-600 text-sm"></i>
+                                                Delete Profile
+                                            </button>
+                                        </div>
+                                    </p-overlayPanel>
                                 </div>
                             </li>
                      
 
                         </ul>
-                  
+                    </div>
+            </div>
+            <div class="col-12 md:col-6 xl:col-4 p-3">
+                <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
+                    <span class="text-gray-500 font-semibold text-sm">Tasks</span>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">12</span> Orders to fulfill </span>
+                                <div class="bg-cyan-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-tag border-circle text-sm text-cyan-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="50"[showValue]="false" [style]="{ height: '4px' }" styleClass="progress-bar-orders"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">24+</span>  Payments to withdraw  </span>
+                                <div class="bg-cyan-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-money-bill border-circle text-sm text-cyan-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="70"[showValue]="false" [style]="{ height: '4px' }"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">4</span>  Reports to revise   </span>
+                                <div class="bg-cyan-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-money-bill border-circle text-sm text-cyan-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="70"[showValue]="false"  [style]="{ height: '4px' }"/>
+                    </div>
                 </div>
             </div>
         </div>

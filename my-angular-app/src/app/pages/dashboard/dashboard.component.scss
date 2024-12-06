@@ -47,3 +47,15 @@ font-size: 0.8rem;
 .primary700{
    background-color: $facebookbg ;
    }
+   .seller-list{
+
+      .p-button{
+@include width-height(2rem,2rem);
+border:1px solid #607d8b;
+      }
+
+   }
+   .p-progressbar .p-progressbar-value   {
+    
+      background: $progres-ssuccess;
+  }
