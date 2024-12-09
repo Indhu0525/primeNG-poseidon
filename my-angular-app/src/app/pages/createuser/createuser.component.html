@@ -1,0 +1,45 @@
+<div class="ng-deep">
+    <p-breadcrumb 
+    class="max-w-full" 
+    [model]="items"  />
+    <div class="bg-white my-3 mx-5 p-3 border-round shadow-1">
+        <span class="font-bold p-2 text-xl  text-900">Create User</span>
+        <div class="grid m-0 p-0 mt-4">
+            <div class="col-2 ">
+                <span class="text-xl font-medium text-gray-500">Profile</span>
+                <p class="m-0 p-0 text-gray-500 text-sm mt-4"> Odio euismod lacinia at quis risus sed vulputate odio. </p>
+            </div>
+            <div class="col-10 ">
+                <div class="flex flex-column gap-2">
+                    <label for="username"class="text-sm">Nickname</label>
+                    <input 
+                        pInputText
+                        id="username" 
+                        aria-describedby="username-help" 
+                        [(ngModel)]="value" />
+                </div>
+                
+                    <div class="flex flex-column gap-2 mt-4">
+                        <label for="username"class="text-sm">Bio</label>
+                        <textarea 
+                    rows="5"
+                    cols="30"
+                    pInputTextarea 
+                    [(ngModel)]="value" class="w-full">
+                </textarea>
+                    </div>
+                    <div class="formgrid grid mt-4">
+                        <div class="field col-12 md:col-6">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        </div>
+                        <div class="field col-12 md:col-6">
+                            <label for="lastname6">Lastname</label>
+                            <input id="lastname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

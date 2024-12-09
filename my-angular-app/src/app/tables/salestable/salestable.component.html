@@ -1,0 +1,30 @@
+<div class="card ng-deep">
+    <p-table [value]="products" [tableStyle]="{'min-width': '60rem'}" [paginator]="true" [rows]="5" [showPageLinks]="true" [showFirstLastIcon]="true">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="id" style="width:10%">
+            ID <p-sortIcon field="id"></p-sortIcon>
+          </th>
+          <th pSortableColumn="category" style="width:15%">
+            Category <p-sortIcon field="category"></p-sortIcon>
+          </th>
+          <th pSortableColumn="price" style="width:10%">
+            Price <p-sortIcon field="price"></p-sortIcon>
+          </th>
+          <th pSortableColumn="inventoryStatus" style="width:15%">
+            Status <p-sortIcon field="inventoryStatus"></p-sortIcon>
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td>{{ product.id }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.inventoryStatus }}</td>
+        
+        </tr>
+      </ng-template>
+      
+    </p-table>
+  </div>

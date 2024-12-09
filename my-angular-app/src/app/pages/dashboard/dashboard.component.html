@@ -707,7 +707,7 @@
                                     <i class="pi pi-tag border-circle text-sm text-cyan-600"></i>
                                 </div>
                         </div>
-                        <p-progressBar [value]="50"[showValue]="false" [style]="{ height: '4px' }" styleClass="progress-bar-orders"/>
+                        <p-progressBar [value]="50"[showValue]="false" [style]="{ height: '4px' }" class="custom-blue-progress"/>
                     </div>
                     <div class="mt-4">
                         <div class="flex justify-content-between mb-2">
@@ -717,21 +717,78 @@
                                     <i class="pi pi-money-bill border-circle text-sm text-cyan-600"></i>
                                 </div>
                         </div>
-                        <p-progressBar [value]="70"[showValue]="false" [style]="{ height: '4px' }"/>
+                        <p-progressBar [value]="70"[showValue]="false" [style]="{ height: '4px' }" class="custom-blue-progress"/>
                     </div>
                     <div class="mt-4">
                         <div class="flex justify-content-between mb-2">
                             <span class="text-gray-500 font-semibold text-sm pb-2">
                                 <span class="text-gray-700">4</span>  Reports to revise   </span>
+                                <div class="bg-orange-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-file border-circle text-sm text-orange-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="20"[showValue]="false"  [style]="{ height: '4px' }" class="custom-orange-progress"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">6</span>  Questions to respond   </span>
+                                <div class="bg-orange-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-comment border-circle text-sm text-orange-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="60"[showValue]="false"  [style]="{ height: '4px', }"class="custom-orange-progress"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">2</span>  Chargebacks to review  </span>
+                                <div class="bg-pink-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-check-square border-circle text-sm text-pink-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="20"[showValue]="false"  [style]="{ height: '4px' }"class="custom-pink-progress"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">12</span>  Orders to fullfill   </span>
+                                <div class="bg-cyan-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
+                                    <i class="pi pi-tag border-circle text-sm text-cyan-600"></i>
+                                </div>
+                        </div>
+                        <p-progressBar [value]="30"[showValue]="false"  [style]="{ height: '4px' }" class="custom-blue-progress"/>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-content-between mb-2">
+                            <span class="text-gray-500 font-semibold text-sm pb-2">
+                                <span class="text-gray-700">40+</span>  Payments to withdraw  </span>
                                 <div class="bg-cyan-100 w-2rem h-2rem border-circle flex align-items-center justify-content-center">
                                     <i class="pi pi-money-bill border-circle text-sm text-cyan-600"></i>
                                 </div>
                         </div>
-                        <p-progressBar [value]="70"[showValue]="false"  [style]="{ height: '4px' }"/>
+                        <p-progressBar [value]="70"[showValue]="false"  [style]="{ height: '4px' }" class="custom-blue-progress"/>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 xl:col-8 p-3">
+                <div class=" px-4 py-3 border-round bg-white font-bold shadow-3">
+                    <div class="flex justify-content-between align-items-center mb-4">
+                        <span class="text-gray-500 font-semibold text-sm">Recent Sales</span>
+                            <p-dropdown 
+                                [options]="WEEK" 
+                                [(ngModel)]="selectedCity" 
+                                optionLabel="name"
+                                placeholder="This week" 
+                                />
+                    </div>
+                    <span class="text-gray-500 font-semibold text-sm ">Your sales activity over time.</span>
+                 <div class="mt-4">
+                    <app-salestable></app-salestable>
+                 </div>
+                
                 </div>
             </div>
         </div>
     </div>
-
 </div>

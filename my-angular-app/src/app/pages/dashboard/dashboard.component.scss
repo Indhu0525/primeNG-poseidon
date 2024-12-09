@@ -55,7 +55,19 @@ border:1px solid #607d8b;
       }
 
    }
-   .p-progressbar .p-progressbar-value   {
+
+   .custom-blue-progress .p-progressbar-value {
+     background-color: $progres-ssuccess !important;
+   }
+ 
+ .custom-orange-progress .p-progressbar-value {
+     background-color: #f57c00 !important;
+   }
+   .custom-pink-progress .p-progressbar-value {
+      background-color: #e91e63 !important;
+    }
+    .p-inputtext{
+      padding: 0.5rem;
+    }
+
     
-      background: $progres-ssuccess;
-  }

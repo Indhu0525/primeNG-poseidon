@@ -1,0 +1,9 @@
+.ng-deep {
+    ::ng-deep {
+      .p-button {
+        padding: 0.25rem;
+        height: auto;
+        width: auto;
+      }
+    }
+  }
