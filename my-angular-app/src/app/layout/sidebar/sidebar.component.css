@@ -4,23 +4,22 @@
 .sidebar span {
   color: #CDD2DB;
 }
-.sidebar li,
-.sidebar .pi {
+.sidebar li, .sidebar .pi {
   color: #E5E8EC;
   font-size: 0.8rem;
 }
-.sidebar li a,
-.sidebar .pi a {
+.sidebar li a, .sidebar li button, .sidebar .pi a, .sidebar .pi button {
   padding-top: 0.5rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
-.sidebar li :hover,
-.sidebar .pi :hover {
+.sidebar li :hover, .sidebar .pi :hover {
   background-color: #59667D;
 }
-.sidebar li .apps,
-.sidebar .pi .apps {
+.sidebar li .apps, .sidebar .pi .apps {
   background-color: none;
+}
+.sidebar li :hover, .sidebar .pi :hover {
+  background-color: #59667D;
 }/*# sourceMappingURL=sidebar.component.css.map */

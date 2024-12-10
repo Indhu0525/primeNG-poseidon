@@ -5,11 +5,11 @@
     <div class="bg-white my-3 mx-5 p-3 border-round shadow-1">
         <span class="font-bold p-2 text-xl  text-900">Create User</span>
         <div class="grid m-0 p-0 mt-4">
-            <div class="col-2 ">
+            <div class="col-12 lg:col-2 ">
                 <span class="text-xl font-medium text-gray-500">Profile</span>
                 <p class="m-0 p-0 text-gray-500 text-sm mt-4"> Odio euismod lacinia at quis risus sed vulputate odio. </p>
             </div>
-            <div class="col-10 ">
+            <div class="col-12 lg:col-10 ">
                 <div class="flex flex-column gap-2">
                     <label for="username"class="text-sm">Nickname</label>
                     <input 
@@ -18,26 +18,58 @@
                         aria-describedby="username-help" 
                         [(ngModel)]="value" />
                 </div>
-                
                     <div class="flex flex-column gap-2 mt-4">
                         <label for="username"class="text-sm">Bio</label>
                         <textarea 
                     rows="5"
                     cols="30"
                     pInputTextarea 
-                    [(ngModel)]="value" class="w-full">
+                     class="w-full">
                 </textarea>
                     </div>
                     <div class="formgrid grid mt-4">
-                        <div class="field col-12 md:col-6">
-                            <label for="email">Email</label>
+                        <div class="field col-12 lg:col-6">
+                            <label for="email"class="text-sm">Email</label>
                             <input id="email" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
                         </div>
-                        <div class="field col-12 md:col-6">
-                            <label for="lastname6">Lastname</label>
-                            <input id="lastname6" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        <div class="field col-12 lg:col-6 block ">
+                            <label for="lastname6"class="text-sm">Country</label>
+                            <p-dropdown
+                            [options]="countries"
+                            [(ngModel)]="selectedCountry"
+                            optionLabel="name"
+                            placeholder="Select a Country"
+                            [filter]="true"
+                            filterPlaceholder="Search..."
+                            [showClear]="true"
+                          >
+                            <ng-template let-country pTemplate="item">
+                              <div class="country-item flex gap-2">
+                                <img [src]="country.flag"  class="flag w-1 " />
+                                <span>{{ country.name }}</span>
+                              </div>
+                            </ng-template>
+                          </p-dropdown>
                         </div>
+                        <div class="field col-12 lg:col-6">
+                            <label for="city"class="text-sm">City</label>
+                            <input id="city" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        </div>
+                        <div class="field col-12 lg:col-6">
+                            <label for="state"class="text-sm">state</label>
+                            <input id="state" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+                        </div>
+                        <div class="field col-12  block ">
+                            <label for="lastname6"class="text-sm">Website</label>
+                            <p-inputGroup class="p-1">
+                                <p-inputGroupAddon>www</p-inputGroupAddon>
+                                <input type="text" pInputText />
+                            </p-inputGroup>
+                        </div>
+                   
+                        <p-button label="Create User" [raised]="true" class="mt-4"/>
                     </div>
+                  
             </div>
         </div>
     </div>

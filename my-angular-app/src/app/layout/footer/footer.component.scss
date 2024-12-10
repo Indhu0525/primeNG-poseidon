@@ -1,5 +1,6 @@
 .ng-deep {
     ::ng-deep {
+      
       .p-button {
         padding: 0.25rem;
         height: auto;
@@ -7,3 +8,7 @@
       }
     }
   }
+
+  // .footer-data{
+  //   width: calc(100% - 18rem);
+  // }fixed bottom-0

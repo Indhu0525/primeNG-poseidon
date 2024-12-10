@@ -7,9 +7,10 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { Sidebar } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
 import { SidebarService } from '../../services/sidebar.service';
+import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
-  imports: [StyleClassModule,AvatarModule,RippleModule,ButtonModule,SidebarModule,CommonModule],
+  imports: [StyleClassModule,AvatarModule,RippleModule,ButtonModule,SidebarModule,CommonModule,],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
   standalone: true,
@@ -62,11 +63,17 @@ sidebarVisible: boolean = false;
 
   isVisible = false;
 
-  constructor(private sidebarService: SidebarService) {}
+  constructor(private sidebarService: SidebarService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     this.sidebarService.isVisible$.subscribe((visible) => {
       this.isVisible = visible;
     });
+    
+  }
+  navigateTo(route: string): void {
+    this.router.navigate([route]); // Navigate to the specified route
   }
 }

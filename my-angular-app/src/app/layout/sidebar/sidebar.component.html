@@ -1,5 +1,5 @@
 
-<div class="sidebar w-18rem h-full overflow-y-auto"[class.hidden]="!isVisible">
+<div class="sidebar w-18rem h-full overflow-y-auto flex-shrink-0"[class.hidden]="!isVisible">
     <div class="">
                 <ul class="list-none p-0 pl-4 m-0 overflow-hidden">
                     <ul class="list-none p-0 my-5">
@@ -7,10 +7,11 @@
                             <span class="text-xs font-semibold">FAVORITES</span>
                         </div>
                         <li>
-                            <a class="apps flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                            <button class="apps flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors bg-transparent border-none shadow-0 w-full " (click)="navigateTo('dashboard')">
                                 <i class="pi pi-home mr-2 " ></i>
                                 <span class="font-medium">Dashboard</span>
-                            </a>
+                            </button>
+                           
                         </li>
                     </ul>
                     <!-- APPS -->
@@ -395,10 +396,10 @@
                             </a>
                         </li>
                         <li class="my-1">
-                            <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                            <button class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors bg-transparent border-none shadow-0 w-full " (click)="navigateTo('createUser')">
                                 <i class="pi pi-plus mr-2 " ></i>
-                                <span class="font-medium">create</span>
-                            </a>
+                                <span class="font-medium bg-transparent">create</span>
+                            </button>
                         </li>
                     </ul>
                       <!-- HIERARCHY -->

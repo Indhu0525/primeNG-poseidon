@@ -15,4 +15,18 @@
 .ng-deep ::ng-deep .p-breadcrumb .p-icon {
   width: 0.8rem;
   height: 0.8rem;
+}
+.ng-deep ::ng-deep .p-dropdown {
+  width: 100%;
+}
+.ng-deep ::ng-deep .p-button {
+  background-color: #1B74C5;
+  color: white;
+  font-size: 0.8rem;
+}
+.ng-deep ::ng-deep .p-inputtext {
+  padding: 0.5rem;
+}
+.ng-deep ::ng-deep .p-placeholder {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=createuser.component.css.map */

@@ -8,12 +8,11 @@
         color: $menuheader-item-color;
     }
 
-    li,
-    .pi {
+    li,.pi {
         color: $menu-item-color;
         font-size: 0.8rem;
 
-        a {
+        a, button{
             @include padding(0.5rem, 1rem, 0.5rem, 1rem);
         }
         :hover {
@@ -21,6 +20,8 @@
         }
         .apps {
             background-color: none;
+        } :hover {
+            background-color: $menu-item-hover-bg;
         }
     }
 }

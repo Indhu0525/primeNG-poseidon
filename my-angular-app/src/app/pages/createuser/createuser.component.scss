@@ -1,11 +1,6 @@
 @import '../../../styles/mixins';
 @import '../../../styles/variables';
 
-
-
-
-
-
  .ng-deep {
     ::ng-deep {
         .p-breadcrumb{
@@ -23,5 +18,20 @@
             }
             
          }
+       .p-dropdown{
+width: 100%;
+       }
+       .p-button{
+         background-color: #1B74C5;
+         color:white;
+         font-size:0.8rem;
+       }
+       .p-inputtext{
+         padding: 0.5rem;
+       
+       }
+       .p-placeholder{
+         font-size: 0.8rem;
+      }
     }
   }
