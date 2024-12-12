@@ -1,22 +1,6 @@
 @import '../../../styles/mixins';
 @import '../../../styles/variables';
 
-.p-breadcrumb{
-   @include padding(1rem,2rem,1rem,2rem);
-   background-color: transparent;
-   border:none;
-   .p-breadcrumb-list{
-font-size: 0.8rem;
-.p-menuitem-text{
-   color:$breadcrumb-text;
-}
-
-   }
-   .p-icon{
-      @include width-height(0.8rem,0.8rem);
-   }
-   
-}
 .arrow{
    @include width-height(20px,20px);
    border-color: $arrow-bordercolor;

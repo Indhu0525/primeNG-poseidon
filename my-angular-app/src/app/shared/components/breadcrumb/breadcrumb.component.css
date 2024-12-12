@@ -1,0 +1,18 @@
+.p-breadcrumb {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  border: none;
+}
+.p-breadcrumb .p-breadcrumb-list {
+  font-size: 0.8rem;
+}
+.p-breadcrumb .p-breadcrumb-list .p-menuitem-text {
+  color: #6c757d;
+}
+.p-breadcrumb .p-icon {
+  width: 0.7rem;
+  height: 0.7rem;
+}/*# sourceMappingURL=breadcrumb.component.css.map */

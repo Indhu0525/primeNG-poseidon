@@ -30,22 +30,22 @@
                                 [ngClass]="{ 'hidden': !isBlogsVisible, 'slidedown': isBlogsVisible }"
                             >
                             <li class="my-1 border-round">
-                                <a class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors">
+                                <button class="flex align-items-center cursor-pointer mb-1 text-700 border-round  transition-duration-150 transition-colors bg-transparent border-none shadow-0 w-full " (click)="navigateTo('bloglist')">
                                     <i class="pi pi-image mr-2 " ></i>
                                     <span class="font-medium">List</span>
-                                </a>
-                            </li>
+                                </button>
+                            </li> 
                             <li class="my-1 border-round">
-                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <button class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors bg-transparent border-none shadow-0 w-full " (click)="navigateTo('blogdetails')">
                                     <i class="pi pi-list mr-2 " ></i>
                                     <span class="font-medium">Details</span>
-                                </a>
+                                </button>
                             </li>
                             <li class="my-1 border-round">
-                                <a class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors">
+                                <button class="flex align-items-center cursor-pointer  border-round text-700  transition-duration-150 transition-colors bg-transparent border-none shadow-0 w-full " (click)="navigateTo('blogedit')">
                                     <i class="pi pi-pencil mr-2 " ></i>
                                     <span class="font-medium">Edit</span>
-                                </a>
+                                </button>
                             </li>
                             </ul>
                         </li>

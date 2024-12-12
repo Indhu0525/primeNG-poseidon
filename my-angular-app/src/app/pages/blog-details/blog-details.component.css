@@ -1,0 +1,14 @@
+.ng-deep ::ng-deep .button {
+  border: 1px solid #dee2e6;
+}
+.ng-deep ::ng-deep .p-button {
+  background-color: #607d8b;
+  color: white;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.ng-deep ::ng-deep .btn-edit .p-button {
+  background-color: #1B74C5;
+}/*# sourceMappingURL=blog-details.component.css.map */

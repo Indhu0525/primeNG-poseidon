@@ -23,13 +23,14 @@ import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { DropdownModule } from 'primeng/dropdown';
+import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';//for breadcrumb module
 
 interface week {
   name: string;
 }
 @Component({
   selector: 'app-dashboard',
-  imports: [DropdownModule,ProgressBarModule,RatingModule,FormsModule,BreadcrumbModule,ChartsModule,ProductschartComponent,TrafficchartComponent,PiechartComponent,AvatarGroupModule,AvatarModule,OverlayPanelModule,InputGroupModule,InputGroupAddonModule,ButtonModule
+  imports: [BreadcrumbComponent,DropdownModule,ProgressBarModule,RatingModule,FormsModule,BreadcrumbModule,ChartsModule,ProductschartComponent,TrafficchartComponent,PiechartComponent,AvatarGroupModule,AvatarModule,OverlayPanelModule,InputGroupModule,InputGroupAddonModule,ButtonModule
     ,InputTextModule,ChipsModule,CommonModule,SalestableComponent
   ],
   templateUrl: './dashboard.component.html',
@@ -55,12 +56,11 @@ export class DashboardComponent {
 ];
 
 WEEK: week[] | undefined;
-
+breadcrumbItems: MenuItem[] = [
+  { label: 'DASHBOARD', }
+];//breadcrumbdata
 selectedCity: week | undefined;
   ngOnInit() {
-      this.items = [
-          { label: 'DASHBOARD' }, 
-      ];
       this.WEEK = [
         { name: 'This Week'},
         { name: 'Last Week'},

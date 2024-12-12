@@ -1,0 +1,335 @@
+<div class="ng-deep">
+    <app-breadcrumb [items]="breadcrumbItems"></app-breadcrumb>
+    <div class="bg-white mt-3 mx-3 md:mx-5 p-3 border-round shadow-1 mb-5 overflow-auto">
+        <div class="articles block md:flex justify-content-between p-2 md:p-3 align-items-center ">
+            <span class="font-semibold p-0 text-xl  text-900">Articles</span>
+            <p-dropdown [options]="Sort" [(ngModel)]="selectedCity" optionLabel="name" placeholder="Sort by" />
+        </div>
+        <div class="grid">
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 1">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card1.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card1-2.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl ">Blog</span>
+                            <p class="mt-3 mb-5">
+                                Ornare egestas pellentesque facilisis in a ultrices erat diam metus integer sed
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">2</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">7</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">15 october</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 1">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card2.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card2.1.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl "> Magazine </span>
+                            <p class="mt-3 mb-5">
+                                Magna iaculis sagittis, amet faucibus scelerisque non ornare non in penatibus
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">5</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">1</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">20 Nov</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 1">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card3.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card3.1.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl ">Science</span>
+                            <p class="mt-3 mb-5">
+                                Purus mattis mi, libero maecenas volutpat quis a morbi arcu pharetra, mollis
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0 focus-none">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">2</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">6</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">23 october</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 2">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card4.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card3.1.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl ">Science</span>
+                            <p class="mt-3 mb-5">
+                                Purus mattis mi, libero maecenas volutpat quis a morbi arcu pharetra, mollis
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0 focus-none">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">2</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">6</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">23 october</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 2">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card5.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card5-1.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl ">Science</span>
+                            <p class="mt-3 mb-5">
+                                Purus mattis mi, libero maecenas volutpat quis a morbi arcu pharetra, mollis
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0 focus-none">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">2</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">6</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">23 october</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-0" *ngIf="currentPage === 2">
+                <div class="p-3">
+                    <div class="p-card shadow-none">
+                        <div class="p-card-header relative">
+                            <img alt="Card" src="../../../assets/images/blog-card6.png" class=" w-full" />
+                            <img alt="Card" src="../../../assets/images/blog-card6-1.png" class="absolute"
+                                style="bottom: -1.5rem; right:1.5rem; " />
+
+                        </div>
+                        <div class="p-card-content p-3">
+                            <span class="text-900 font-semibold text-xl ">Science</span>
+                            <p class="mt-3 mb-5">
+                                Purus mattis mi, libero maecenas volutpat quis a morbi arcu pharetra, mollis
+                            </p>
+
+                            <div class="p-card-footer p-0">
+                                <div class="flex gap-2 justify-content-between mt-1 align-items-center">
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0 focus-none">
+                                            <i class="pi pi-comments" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">2</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-share-alt" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">6</span>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="p-button w-full flex gap-1 p-0">
+                                            <i class="pi pi-clock" style="font-size: 1rem"></i>
+                                            <span class="text-900 font-medium text-sm ">23 october</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p-paginator [rows]="1" [totalRecords]="2" (onPageChange)="onPageChange($event)" class="mt-3">
+        </p-paginator>
+    </div>
+    <div class="bg-white mt-3 mx-3 md:mx-5 px-4 py-8 md:px-6 lg:px-8 border-round shadow-1 mb-5">
+        <h3 class="font-semibold p-0 text-5xl mb-3 mt-0 text-900">Recent Articles</h3>
+        <div>
+            <p class="text-lg text-700 mb-5 p-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="grid">
+            <div class="col-12 md:col-4 p-4">
+                <div class="p-card shadow-none">
+                    <p-progressBar [value]="100" [showValue]="false" [style]="{ height: '3px' }"class="custom-blue-progress" />
+                    <h3 class="text-blue-600 my-2 font-medium text-sm">Animals</h3>
+                    <p class="mb-4 text-xl text-900">Why Earth's most beloved creatures are headed toward extinction</p>
+                    <p class="text-sm text-700"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="flex gap-2">
+                        <img src="../../../assets/images/blog-card2.1.png" class="w-2rem h-2rem">
+                        <div>
+                            <div class="text-xs font-bold text-900 ">Anna Miles</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                                <span>Apr 9, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-4">
+                <div class="p-card shadow-none">
+                    <p-progressBar [value]="100" [showValue]="false" [style]="{ height: '3px' }"class="custom-pink-progress" />
+                    <h3 class="text-pink-600 my-2 font-medium text-sm">Oxygen</h3>
+                    <p class="mb-4 text-xl text-900">Only one-third of tropical rainforests remain intact, study says </p>
+                    <p class="text-sm text-700"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="flex gap-2">
+                        <img src="../../../assets/images/blog-card3.1.png" class="w-2rem h-2rem">
+                        <div>
+                            <div class="text-xs font-bold text-900 ">Anna Miles</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                                <span>Apr 9, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 md:col-4 p-4">
+                <div class="p-card shadow-none">
+                    <p-progressBar [value]="100" [showValue]="false" [style]="{ height: '3px' }"class="custom-orange-progress" />
+                    <h3 class="text-orange-600 my-2 font-medium text-sm">Nature</h3>
+                    <p class="mb-4 text-xl text-900">Does planting a tree really offset your carbon footprint?</p>
+                    <p class="text-sm text-700"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="flex gap-2">
+                        <img src="../../../assets/images/blog-card6-1.png" class="w-2rem h-2rem">
+                        <div>
+                            <div class="text-xs font-bold text-900 ">Anna Miles</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                                <span>Apr 9, 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

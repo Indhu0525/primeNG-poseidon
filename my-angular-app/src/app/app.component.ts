@@ -5,6 +5,7 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,HeaderComponent,SidebarComponent,DashboardComponent,FooterComponent],

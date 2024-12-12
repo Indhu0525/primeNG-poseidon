@@ -14,6 +14,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { ButtonModule } from 'primeng/button';
 
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { BreadcrumbComponent } from '../../shared/components/breadcrumb/breadcrumb.component';//BREADCRUMB
 
 
 
@@ -29,6 +30,7 @@ interface Country {
   standalone: true,
   imports: [
     BreadcrumbModule,
+    BreadcrumbComponent,
     ButtonModule,
     InputTextModule,
     FormsModule,
@@ -47,7 +49,7 @@ interface Country {
   providers: [MessageService],
 })
 export class CreateuserComponent {
-  items: MenuItem[] | undefined;
+  items: MenuItem[] | undefined;//breadcrumb
   home: MenuItem | undefined;
   value: string | undefined;
   text1: string | undefined;
@@ -67,9 +69,10 @@ export class CreateuserComponent {
 
 
   text4: string | undefined;
+  breadcrumbItems: MenuItem[] = [
+    { label: 'USER MANAGEMENT', },
+    { label: 'CREATE', },
+  ];
 
-
-  ngOnInit() {
-    this.items = [{ label: 'USER MANAGEMENT' }, { label: 'CREATE' }];
-  }
+  
 }

@@ -1,0 +1,18 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+        .p-breadcrumb{
+            @include padding(1rem,2rem,1rem,2rem);
+            background-color: transparent;
+            border:none;
+            .p-breadcrumb-list{
+         font-size: 0.8rem;
+         .p-menuitem-text{
+            color:$breadcrumb-text;
+         }
+            }
+            .p-icon{
+               @include width-height(0.7rem,0.7rem);
+            }
+         }
+    

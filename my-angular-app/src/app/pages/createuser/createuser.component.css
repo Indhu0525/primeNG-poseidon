@@ -1,21 +1,3 @@
-.ng-deep ::ng-deep .p-breadcrumb {
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  background-color: transparent;
-  border: none;
-}
-.ng-deep ::ng-deep .p-breadcrumb .p-breadcrumb-list {
-  font-size: 0.7rem;
-}
-.ng-deep ::ng-deep .p-breadcrumb .p-breadcrumb-list .p-menuitem-text {
-  color: #6c757d;
-}
-.ng-deep ::ng-deep .p-breadcrumb .p-icon {
-  width: 0.8rem;
-  height: 0.8rem;
-}
 .ng-deep ::ng-deep .p-dropdown {
   width: 100%;
 }

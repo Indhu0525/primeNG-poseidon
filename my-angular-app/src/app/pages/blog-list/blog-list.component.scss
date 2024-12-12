@@ -1,0 +1,44 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.ng-deep {
+    ::ng-deep {
+        .articles {
+            border: 1px solid $articles-border;
+            background-color: $articles-bg;
+
+            .p-dropdown {
+                width: 15rem;
+            }
+
+            .p-inputtext {
+                @include padding(0.5rem, 0.5rem, 0.5rem, 0.5rem);
+            }
+            .p-icon{
+                @include  width-height(0.8rem,0.8rem);
+            }
+        }
+                .p-paginator-page{
+                border-radius: 25%;
+                height: 2rem;
+                min-width: 2rem;
+              }
+              .p-component{
+                font-size: 0.8rem;
+              }
+              .custom-blue-progress .p-progressbar-value {
+                background-color: $progres-ssuccess !important;
+              }
+            
+            .custom-orange-progress .p-progressbar-value {
+                background-color: #f57c00 !important;
+              }
+              .custom-pink-progress .p-progressbar-value {
+                 background-color: #e91e63 !important;
+               }
+               .p-inputtext{
+                 padding: 0.5rem;
+               }
+           
+    }
+}
