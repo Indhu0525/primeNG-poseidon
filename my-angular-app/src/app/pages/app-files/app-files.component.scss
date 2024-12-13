@@ -1,0 +1,14 @@
+
+@import '../../../styles/mixins';
+@import '../../../styles//variables';
+.ng-deep{
+    ::ng-deep{
+      
+        .p-metergroup-labels{
+          display: none;
+        }
+        .p-metergroup.p-metergroup-horizontal .p-metergroup-meters {
+          height: 0.3rem;
+      }
+    }
+} 

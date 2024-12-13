@@ -1,1 +1,163 @@
-<p>app-files works!</p>
+<div class="ng-deep">
+    <app-breadcrumb [items]="breadcrumbItems"></app-breadcrumb>
+    <div class="mt-3 mx-3 md:mx-5  mb-5 overflow-auto">
+        <div class="grid m-0">
+            <div class="col-12 md:col-6 xl:col-3">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Cloud Storage</span>
+                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                    </div>
+                    <p-overlayPanel #op>
+                        <div class="flex flex-column">
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-search text-gray-600 text-sm"></i>
+                            View 
+                          </button>
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                            Refresh
+                          </button>
+                        </div>
+                      </p-overlayPanel>
+                      <p-meterGroup [value]="value1" p-metergrouplabel="none" />
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="col-12 md:col-6 xl:col-3">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Dropbox Storage</span>
+                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                    </div>
+                    <p-overlayPanel #op>
+                        <div class="flex flex-column">
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-search text-gray-600 text-sm"></i>
+                            View 
+                          </button>
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                            Refresh
+                          </button>
+                        </div>
+                      </p-overlayPanel>
+                      <p-meterGroup [value]="value2" p-metergrouplabel="none" />
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="col-12 md:col-6 xl:col-3">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Google Drive Storage</span>
+                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                    </div>
+                    <p-overlayPanel #op>
+                        <div class="flex flex-column">
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-search text-gray-600 text-sm"></i>
+                            View 
+                          </button>
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                            Refresh
+                          </button>
+                        </div>
+                      </p-overlayPanel>
+                      <p-meterGroup [value]="value3" p-metergrouplabel="none" />
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="col-12 md:col-6 xl:col-3">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Internal Storage</span>
+                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                    </div>
+                    <p-overlayPanel #op>
+                        <div class="flex flex-column">
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-search text-gray-600 text-sm"></i>
+                            View 
+                          </button>
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                            Refresh
+                          </button>
+                        </div>
+                      </p-overlayPanel>
+                      <p-meterGroup [value]="value4" p-metergrouplabel="none" />
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+        <div class="grid m-0">
+            <div class="col-12 md:col-3">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Account Storage</span>
+                    </div>
+                    <div class="flex justify-content-center">
+                        <p-knob [(ngModel)]="value" [readonly]="true" [strokeWidth]="5"/>
+                    </div>
+                  
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="col-12 md:col-9">
+                <div class="p-3 bg-white ">
+                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Account Storage</span>
+                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                    </div>
+                    <p-overlayPanel #op>
+                        <div class="flex flex-column">
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-search text-gray-600 text-sm"></i>
+                            View 
+                          </button>
+                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
+                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
+                            Refresh
+                          </button>
+                        </div>
+                      </p-overlayPanel>
+                      <!-- <p-progressBar [value]="70"[showValue]="false" [style]="{ height: '6px' }" class="custom-pink-progress "/> -->
+                      <div class="text-center font-bold flex justify-content-between align-items-center ">
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
+                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                    </div>
+                </div>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+   
+</div>

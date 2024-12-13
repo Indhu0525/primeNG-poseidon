@@ -1,0 +1,6 @@
+.ng-deep ::ng-deep .p-metergroup-labels {
+  display: none;
+}
+.ng-deep ::ng-deep .p-metergroup.p-metergroup-horizontal .p-metergroup-meters {
+  height: 0.3rem;
+}/*# sourceMappingURL=app-files.component.css.map */

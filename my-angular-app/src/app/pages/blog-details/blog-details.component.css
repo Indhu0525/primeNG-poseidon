@@ -11,4 +11,19 @@
 }
 .ng-deep ::ng-deep .btn-edit .p-button {
   background-color: #1B74C5;
+}
+.ng-deep ::ng-deep .p-inputgroup-addon,
+.ng-deep ::ng-deep .p-inputtext {
+  background-color: transparent;
+  min-width: 0;
+  padding-top: 0.5rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
+}
+.ng-deep ::ng-deep .p-inputtext {
+  border-bottom: 1px solid #d1d5db;
+  border-top: 1px solid #d1d5db;
+  border-right: 1px solid #d1d5db;
+  border-left: none;
 }/*# sourceMappingURL=blog-details.component.css.map */
