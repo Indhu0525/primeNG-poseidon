@@ -3,4 +3,24 @@
 }
 .ng-deep ::ng-deep .p-metergroup.p-metergroup-horizontal .p-metergroup-meters {
   height: 0.3rem;
+}
+.ng-deep ::ng-deep .p-knob-text {
+  font-size: 0.3rem;
+}
+.ng-deep ::ng-deep .publish {
+  background-color: #e8f1f8;
+}
+.ng-deep ::ng-deep .p-button {
+  background-color: transparent;
+}
+.ng-deep ::ng-deep .btn-edit .p-button {
+  background-color: #1B74C5;
+  color: white;
+  width: 100%;
+}
+.ng-deep ::ng-deep .btn-details .p-button {
+  background-color: transparent;
+  color: #1B74C5;
+  border: 1px solid #1B74C5;
+  width: 100%;
 }/*# sourceMappingURL=app-files.component.css.map */

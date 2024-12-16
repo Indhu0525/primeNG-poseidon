@@ -8,9 +8,10 @@ import { Sidebar } from 'primeng/sidebar';
 import { CommonModule } from '@angular/common';
 import { SidebarService } from '../../services/sidebar.service';
 import { Router, RouterModule } from '@angular/router';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 @Component({
   selector: 'app-sidebar',
-  imports: [StyleClassModule,AvatarModule,RippleModule,ButtonModule,SidebarModule,CommonModule,],
+  imports: [StyleClassModule,AvatarModule,RippleModule,ButtonModule,SidebarModule,CommonModule,ScrollPanelModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
   standalone: true,

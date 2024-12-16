@@ -1,6 +1,15 @@
 .sidebar {
   background-color: #3C4962;
 }
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(228, 228, 228, 0.2);
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(185, 22, 22, 0.4);
+}
 .sidebar span {
   color: #CDD2DB;
 }

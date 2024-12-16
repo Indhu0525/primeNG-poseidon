@@ -12,13 +12,21 @@ import { CommonModule } from '@angular/common';//overlay
 import { MeterGroupModule } from 'primeng/metergroup';//metergroup
 import { FormsModule } from '@angular/forms';
 import { KnobModule } from 'primeng/knob';//for meterround
-
+import { MessageService } from 'primeng/api';//file upload
+import { FileUploadEvent, FileUploadModule } from 'primeng/fileupload';//file upload
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+interface UploadEvent {
+  originalEvent: Event;
+  files: File[];
+}
 
 @Component({
   selector: 'app-app-files',
-  imports: [BreadcrumbModule,BreadcrumbComponent,OverlayPanelModule,CommonModule,ChipsModule,InputTextModule,ButtonModule,InputGroupAddonModule,InputGroupModule,MeterGroupModule,KnobModule,FormsModule],
+  imports: [FileUploadModule,BreadcrumbModule,BreadcrumbComponent,OverlayPanelModule,HttpClientModule ,CommonModule,ChipsModule,InputTextModule,ButtonModule,InputGroupAddonModule,InputGroupModule,MeterGroupModule,KnobModule,FormsModule],
   templateUrl: './app-files.component.html',
-  styleUrl: './app-files.component.scss'
+  standalone: true,
+  styleUrl: './app-files.component.scss',
+   providers: [MessageService,HttpClient]
 })
 export class AppFilesComponent {
   items: MenuItem[] | undefined;//breadcrumb
@@ -38,5 +46,21 @@ value3 = [
 value4 = [
   {value: 30, color: '#3f51b5' }
 ];//metergroup4
-value: number = 50;//knob
+value: number  = 70;//knob
+
+files: File[] = [];
+constructor(private messageService: MessageService) {}
+
+onUpload(event: FileUploadEvent): void {
+  // Process the uploaded files
+  const uploadedFiles = event.files.map(file => file.name).join(', ');
+
+  // Display a success message
+  this.messageService.add({
+    severity: 'info',
+    summary: 'File Uploaded',
+    detail: `Uploaded Files: ${uploadedFiles}`
+  });
+}
+
 }

@@ -112,51 +112,296 @@
             </div>
         </div>
         <div class="grid m-0">
-            <div class="col-12 md:col-3">
+            <div class="col-12 xl:col-3">
+              <div class="col-12">
                 <div class="p-3 bg-white ">
-                    <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
-                        <span class="font-semibold p-0 text-lg  text-900 flex">Account Storage</span>
-                    </div>
-                    <div class="flex justify-content-center">
-                        <p-knob [(ngModel)]="value" [readonly]="true" [strokeWidth]="5"/>
-                    </div>
-                  
-                      <div class="text-center font-bold flex justify-content-between align-items-center ">
-                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
-                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
-                    </div>
-                </div>
-               
+                  <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                      <span class="font-semibold p-0 text-lg  text-900 flex">Account Storage</span>
+                  </div>
+                  <div class="flex justify-content-center">
+                      <p-knob  [(ngModel)]="value" [readonly]="true" [strokeWidth]="5" [valueTemplate]="'Free Space  50GB / 80GB'"  [size]="250" />
+                  </div>
                 
-            </div>
-            <div class="col-12 md:col-9">
+                    <div class="text-center font-bold block flex justify-content-between align-items-center ">
+                        <p-button label="Details" icon="pi pi-search text-blue-500" class="btn-details text-blue-800 p-2 w-full" />
+                        <p-button label="Upgrade" icon="pi pi-upload text-white" class="btn-edit  px-3 py-2 w-full bg-transparent" />
+                  </div>
+              </div>
+              </div>
+              <div class="col-12">
                 <div class="p-3 bg-white ">
                     <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
-                        <span class="font-semibold p-0 text-lg  text-900 flex">Account Storage</span>
-                        <p-button (onClick)="op.toggle($event)" icon="pi pi-ellipsis-v text-sm text-blue-400" />
+                        <span class="font-semibold p-0 text-lg  text-900 flex">Categories</span>
                     </div>
-                    <p-overlayPanel #op>
-                        <div class="flex flex-column">
-                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
-                            <i class="pi pi-search text-gray-600 text-sm"></i>
-                            View 
-                          </button>
-                          <button class="flex gap-2 p-3 border-none text-gray-600 text-sm align-items-center bg-white hover:bg-gray-200 cursor-pointer">
-                            <i class="pi pi-refresh text-gray-600 text-sm"></i>
-                            Refresh
-                          </button>
+                    <div class="p-3 bg-indigo-50 border-round ">
+                      <div class="flex justify-content-between align-items-center">
+                        <div>
+                          <i class="pi pi-image text-xl text-indigo-600"></i>
+                          <span class="ml-3 text-indigo-600 font-medium text-sm">Images</span>
                         </div>
-                      </p-overlayPanel>
-                      <!-- <p-progressBar [value]="70"[showValue]="false" [style]="{ height: '6px' }" class="custom-pink-progress "/> -->
-                      <div class="text-center font-bold flex justify-content-between align-items-center ">
-                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">421 FILES</span>
-                        <span class="font-medium p-0 text-xs  text-700 flex mt-3">1.12GB</span>
+                       <span class="text-indigo-600 font-bold text-sm">85</span>
+                      </div>
+                    </div>
+                    <div class="p-3 bg-purple-50 border-round my-3">
+                      <div class="flex justify-content-between align-items-center">
+                        <div>
+                          <i class="pi pi-file text-xl text-purple-600"></i>
+                          <span class="ml-3 text-purple-600 font-medium text-sm">Documents</span>
+                        </div>
+                       <span class="text-purple-600 font-bold text-sm">231</span>
+                      </div>
+                    </div>
+                    <div class="p-3 bg-teal-50 border-round">
+                      <div class="flex justify-content-between align-items-center">
+                        <div>
+                          <i class="pi pi-video text-xl text-gray-600"></i>
+                          <span class="ml-3 text-teal-600 font-medium text-sm">Videos</span>
+                        </div>
+                       <span class="text-teal-600 font-bold text-sm">40</span>
+                      </div>
                     </div>
                 </div>
-               
+            </div>
+            <div class="col-12">
+              <div class="px-3  py-5 bg-white flex flex-column align-items-center justify-content-center">
+                <div class="flex justify-content-center">
+                  <p-fileUpload 
+                  mode="basic" 
+                  chooseLabel="Upload files" 
+                  chooseIcon="pi pi-upload"
+                  name="demo[]" 
+                  url="https://www.primefaces.org/cdn/api/upload.php" 
+                  accept="image/*" 
+                  maxFileSize="1000000" 
+                  (onUpload)="onUpload($event)" class="block" />
+                </div>
+                <span class="txet-sm text-gray-600 font-medium my-3">Drop or select files</span>
+              </div>
+             
+          </div>
+            </div>
+            <div class="col-12 xl:col-9">
+              <div class="col-12">
+                <div class="p-3 bg-white ">
+                  <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                      <span class="font-semibold p-0 text-lg  text-900 flex">Folder </span>
+                  </div>
+                  <div class="grid m-0">
+                    <div class="col-12 xl:col-4 md:col-6">
+                      <div class="p-3 bg-white surface-border border-round border-1">
+                        <div class="flex justify-content-between align-items-center">
+                          <div>
+                            <i class="pi pi-folder text-xl text-gray-600"></i>
+                            <span class="ml-3 text-gray-600 font-medium text-sm">Miami 2022</span>
+                          </div>
+                         <span class="text-gray-600 font-medium text-sm">12</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 xl:col-4 md:col-6">
+                    <div class="p-3 bg-white surface-border border-round border-1">
+                      <div class="flex justify-content-between align-items-center">
+                        <div>
+                          <i class="pi pi-folder text-xl text-gray-600"></i>
+                          <span class="ml-3 text-gray-600 font-medium text-sm">Prototype</span>
+                        </div>
+                       <span class="text-gray-600 font-medium text-sm">1</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 xl:col-4 md:col-6">
+                  <div class="p-3 bg-white surface-border border-round border-1">
+                    <div class="flex justify-content-between align-items-center">
+                      <div>
+                        <i class="pi pi-folder text-xl text-gray-600"></i>
+                        <span class="ml-3 text-gray-600 font-medium text-sm">Other files</span>
+                      </div>
+                     <span class="text-gray-600 font-medium text-sm">53</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 xl:col-4 md:col-6">
+                <div class="p-3 bg-white surface-border border-round border-1">
+                  <div class="flex justify-content-between align-items-center">
+                    <div>
+                      <i class="pi pi-folder text-xl text-gray-600"></i>
+                      <span class="ml-3 text-gray-600 font-medium text-sm">Antalya holidays</span>
+                    </div>
+                   <span class="text-gray-600 font-medium text-sm">12</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 xl:col-4 md:col-6">
+              <div class="p-3 bg-white surface-border border-round border-1">
+                <div class="flex justify-content-between align-items-center">
+                  <div>
+                    <i class="pi pi-folder text-xl text-gray-600"></i>
+                    <span class="ml-3 text-gray-600 font-medium text-sm">Studio Photograpy</span>
+                  </div>
+                 <span class="text-gray-600 font-medium text-sm">12</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 xl:col-4 md:col-6">
+            <div class="p-3 bg-white surface-border border-round border-1">
+              <div class="flex justify-content-between align-items-center">
+                <div>
+                  <i class="pi pi-folder-open text-xl text-gray-600"></i>
+                  <span class="ml-3 text-gray-600 font-medium text-sm">Server Backup</span>
+                </div>
+               <span class="text-gray-600 font-medium text-sm">12</span>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 xl:col-4 md:col-6">
+          <div class="p-3 bg-white surface-border border-round border-1">
+            <div class="flex justify-content-between align-items-center">
+              <div>
+                <i class="pi pi-folder text-xl text-gray-600"></i>
+                <span class="ml-3 text-gray-600 font-medium text-sm">Document Files</span>
+              </div>
+             <span class="text-gray-600 font-medium text-sm">12</span>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 xl:col-4 md:col-6">
+        <div class="p-3 bg-white surface-border border-round border-1">
+          <div class="flex justify-content-between align-items-center">
+            <div>
+              <i class="pi pi-image text-xl text-gray-600"></i>
+              <span class="ml-3 text-gray-600 font-medium text-sm">Vocals</span>
+            </div>
+           <span class="text-gray-600 font-medium text-sm">12</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-12 xl:col-4 md:col-6">
+      <div class="p-3 bg-white surface-border border-round border-1">
+        <div class="flex justify-content-between align-items-center">
+          <div>
+            <i class="pi pi-folder-open text-xl text-gray-600"></i>
+            <span class="ml-3 text-gray-600 font-medium text-sm">Volces</span>
+          </div>
+         <span class="text-gray-600 font-medium text-sm">12</span>
+        </div>
+      </div>
+  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-12">
+                <div class="p-3 bg-white ">
+                  <div class="text-center font-bold flex justify-content-between align-items-center mb-3">
+                      <span class="font-semibold p-0 text-lg  text-900 flex">Folder </span>
+                  </div>
+                  <div class="grid m-0">
+                    <div class="col-12 xl:col-4 md:col-6">
+                      <div class="p-3 bg-white surface-border border-round border-1">
+                        <div class="flex justify-content-between align-items-center">
+                          <div>
+                            <i class="pi pi-folder text-xl text-gray-600"></i>
+                            <span class="ml-3 text-gray-600 font-medium text-sm">Miami 2022</span>
+                          </div>
+                         <span class="text-gray-600 font-medium text-sm">12</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-12 xl:col-4 md:col-6">
+                    <div class="p-3 bg-white surface-border border-round border-1">
+                      <div class="flex justify-content-between align-items-center">
+                        <div>
+                          <i class="pi pi-folder text-xl text-gray-600"></i>
+                          <span class="ml-3 text-gray-600 font-medium text-sm">Prototype</span>
+                        </div>
+                       <span class="text-gray-600 font-medium text-sm">1</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 xl:col-4 md:col-6">
+                  <div class="p-3 bg-white surface-border border-round border-1">
+                    <div class="flex justify-content-between align-items-center">
+                      <div>
+                        <i class="pi pi-folder text-xl text-gray-600"></i>
+                        <span class="ml-3 text-gray-600 font-medium text-sm">Other files</span>
+                      </div>
+                     <span class="text-gray-600 font-medium text-sm">53</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 xl:col-4 md:col-6">
+                <div class="p-3 bg-white surface-border border-round border-1">
+                  <div class="flex justify-content-between align-items-center">
+                    <div>
+                      <i class="pi pi-folder text-xl text-gray-600"></i>
+                      <span class="ml-3 text-gray-600 font-medium text-sm">Antalya holidays</span>
+                    </div>
+                   <span class="text-gray-600 font-medium text-sm">12</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 xl:col-4 md:col-6">
+              <div class="p-3 bg-white surface-border border-round border-1">
+                <div class="flex justify-content-between align-items-center">
+                  <div>
+                    <i class="pi pi-folder text-xl text-gray-600"></i>
+                    <span class="ml-3 text-gray-600 font-medium text-sm">Studio Photograpy</span>
+                  </div>
+                 <span class="text-gray-600 font-medium text-sm">12</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 xl:col-4 md:col-6">
+            <div class="p-3 bg-white surface-border border-round border-1">
+              <div class="flex justify-content-between align-items-center">
+                <div>
+                  <i class="pi pi-folder-open text-xl text-gray-600"></i>
+                  <span class="ml-3 text-gray-600 font-medium text-sm">Server Backup</span>
+                </div>
+               <span class="text-gray-600 font-medium text-sm">12</span>
+              </div>
+            </div>
+        </div>
+        <div class="col-12 xl:col-4 md:col-6">
+          <div class="p-3 bg-white surface-border border-round border-1">
+            <div class="flex justify-content-between align-items-center">
+              <div>
+                <i class="pi pi-folder text-xl text-gray-600"></i>
+                <span class="ml-3 text-gray-600 font-medium text-sm">Document Files</span>
+              </div>
+             <span class="text-gray-600 font-medium text-sm">12</span>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 xl:col-4 md:col-6">
+        <div class="p-3 bg-white surface-border border-round border-1">
+          <div class="flex justify-content-between align-items-center">
+            <div>
+              <i class="pi pi-image text-xl text-gray-600"></i>
+              <span class="ml-3 text-gray-600 font-medium text-sm">Vocals</span>
+            </div>
+           <span class="text-gray-600 font-medium text-sm">12</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-12 xl:col-4 md:col-6">
+      <div class="p-3 bg-white surface-border border-round border-1">
+        <div class="flex justify-content-between align-items-center">
+          <div>
+            <i class="pi pi-folder-open text-xl text-gray-600"></i>
+            <span class="ml-3 text-gray-600 font-medium text-sm">Volces</span>
+          </div>
+         <span class="text-gray-600 font-medium text-sm">12</span>
+        </div>
+      </div>
+  </div>
+                </div>
+              </div>
+              </div>
+                 
                 
             </div>
            
+        
         </div>
     </div>
    
