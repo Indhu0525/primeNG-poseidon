@@ -1,0 +1,8 @@
+.ng-deep ::ng-deep .p-paginator-page {
+  border-radius: 25%;
+  height: 2rem;
+  min-width: 2rem;
+}
+.ng-deep ::ng-deep .p-component {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=recentuploads.component.css.map */

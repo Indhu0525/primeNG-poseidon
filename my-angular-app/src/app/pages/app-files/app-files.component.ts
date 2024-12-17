@@ -15,6 +15,7 @@ import { KnobModule } from 'primeng/knob';//for meterround
 import { MessageService } from 'primeng/api';//file upload
 import { FileUploadEvent, FileUploadModule } from 'primeng/fileupload';//file upload
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RecentuploadsComponent } from '../../tables/recentuploads/recentuploads.component';
 interface UploadEvent {
   originalEvent: Event;
   files: File[];
@@ -22,7 +23,7 @@ interface UploadEvent {
 
 @Component({
   selector: 'app-app-files',
-  imports: [FileUploadModule,BreadcrumbModule,BreadcrumbComponent,OverlayPanelModule,HttpClientModule ,CommonModule,ChipsModule,InputTextModule,ButtonModule,InputGroupAddonModule,InputGroupModule,MeterGroupModule,KnobModule,FormsModule],
+  imports: [FileUploadModule,BreadcrumbModule,BreadcrumbComponent,OverlayPanelModule,HttpClientModule ,CommonModule,ChipsModule,InputTextModule,ButtonModule,InputGroupAddonModule,InputGroupModule,MeterGroupModule,KnobModule,FormsModule,RecentuploadsComponent],
   templateUrl: './app-files.component.html',
   standalone: true,
   styleUrl: './app-files.component.scss',
